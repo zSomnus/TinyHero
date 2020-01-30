@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float fallMultiplier;
     [SerializeField] float lowJumpMultiplier;
 
-
+    Collision collision;
 
     Animator animator;
     // Start is called before the first frame update
@@ -22,6 +22,7 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        collision = GetComponent<Collision>();
     }
 
     private void FixedUpdate()
@@ -33,6 +34,8 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         Walk();
         if(Input.GetAxis("Horizontal") != 0f)
         {
@@ -42,7 +45,31 @@ public class Movement : MonoBehaviour
         {
             animator.SetBool("Moving", false);
         }
-        Jump();
+
+        if (collision.OnGround())
+        {
+            animator.SetBool("Jumping", false);
+            Jump();
+        }
+        else
+        {
+            animator.SetBool("Jumping", true);
+        }
+
+        if(rb.velocity.y > 0.5f)
+        {
+            animator.SetBool("Jumping", true);
+        }
+        else if(rb.velocity.y < -1f)
+        {
+            animator.SetBool("Jumping", false);
+            animator.SetBool("Falling", true);
+        }
+        else
+        {
+            animator.SetBool("Jumping", false);
+            animator.SetBool("Falling", false);
+        }
 
         SimulatePhysics();
     }
@@ -80,7 +107,7 @@ public class Movement : MonoBehaviour
 
     void FlipSprite()
     {
-        bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
+        bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon + 0.5f;
         if (playerHasHorizontalSpeed)
         {
             transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
