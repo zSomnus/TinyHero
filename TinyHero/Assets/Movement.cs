@@ -105,6 +105,14 @@ public class Movement : MonoBehaviour
         }
     }
 
+    void Attack()
+    {
+        if (Input.GetButtonDown("Fire"))
+        {
+            animator.SetTrigger("Attack1");
+        }
+    }
+
     void FlipSprite()
     {
         bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon + 0.5f;
