@@ -36,8 +36,8 @@ public class Collision : MonoBehaviour
         var positions = new Vector2[] { bottomOffset, rightOffset, leftOffset };
 
         Gizmos.DrawWireSphere((Vector2)transform.position + bottomOffset, collisionRadius);
-        Gizmos.DrawWireSphere((Vector2)transform.position + rightOffset, collisionRadius);
-        Gizmos.DrawWireSphere((Vector2)transform.position + leftOffset, collisionRadius);
+        //Gizmos.DrawWireSphere((Vector2)transform.position + rightOffset, collisionRadius);
+        //Gizmos.DrawWireSphere((Vector2)transform.position + leftOffset, collisionRadius);
 
         Vector3 center = transform.position;
         Gizmos.DrawWireCube(new Vector3(center.x + rightOffset.x, center.y + rightOffset.y, center.z), boxSize);
