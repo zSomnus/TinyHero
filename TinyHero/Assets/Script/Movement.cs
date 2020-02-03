@@ -6,6 +6,11 @@ public class Movement : MonoBehaviour
 {
     Rigidbody2D rb;
 
+    [Space]
+    public bool isAttackOne;
+    public bool isAttackTwo;
+    public bool isAttackThree;
+
     [SerializeField] float walkSpeed;
     [Space]
     [SerializeField] float jumpSpeed;
@@ -71,6 +76,12 @@ public class Movement : MonoBehaviour
             animator.SetBool("Falling", false);
         }
 
+        if (Input.GetButtonDown("Fire1"))
+        {
+            animator.SetBool("Attacking", true);
+            Attack();
+        }
+
         SimulatePhysics();
     }
 
@@ -107,10 +118,45 @@ public class Movement : MonoBehaviour
 
     void Attack()
     {
-        if (Input.GetButtonDown("Fire"))
+        if (!isAttackOne)
         {
-            animator.SetTrigger("Attack1");
+            isAttackOne = true;
+            animator.SetBool("Attack1", true);
         }
+        else
+        {
+            if (!isAttackTwo)
+            {
+                isAttackTwo = true;
+                animator.SetBool("Attack1", false);
+                animator.SetBool("Attack2", true);
+            }
+            else
+            {
+                animator.SetBool("Attack2", false);
+                animator.SetBool("Attack3", true);
+            }
+        }
+    }
+
+    void AttackOneStart()
+    {
+        isAttackOne = true;
+    }
+
+    void AttackOneEnd()
+    {
+        isAttackOne = false;
+    }
+
+    void AttackTwoStart()
+    {
+        isAttackTwo = true;
+    }
+
+    void AttackTwoEnd()
+    {
+        isAttackTwo = false;
     }
 
     void FlipSprite()
