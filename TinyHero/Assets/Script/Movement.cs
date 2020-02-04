@@ -22,12 +22,16 @@ public class Movement : MonoBehaviour
     Collision collision;
 
     Animator animator;
+
+    [SerializeField] int attackCount;
+    [SerializeField] bool canMove;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         collision = GetComponent<Collision>();
+        canMove = true;
     }
 
     private void FixedUpdate()
@@ -40,15 +44,17 @@ public class Movement : MonoBehaviour
     void Update()
     {
 
-
-        Walk();
-        if(Input.GetAxis("Horizontal") != 0f)
+        if (canMove)
         {
-            animator.SetBool("Moving", true);
-        }
-        else
-        {
-            animator.SetBool("Moving", false);
+            Walk();
+            if(Input.GetAxis("Horizontal") != 0f)
+            {
+                animator.SetBool("Moving", true);
+            }
+            else
+            {
+                animator.SetBool("Moving", false);
+            }
         }
 
         if (collision.OnGround())
@@ -78,10 +84,17 @@ public class Movement : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            animator.SetBool("Attacking", true);
-            Attack();
+            attackCount++;
+            //animator.SetBool("Attacking", true);
+            //Attack();
         }
 
+        if (attackCount > 0)
+        {
+            canMove = false;
+            Attack();
+            attackCount = 0;
+        }
         SimulatePhysics();
     }
 
@@ -116,27 +129,15 @@ public class Movement : MonoBehaviour
         }
     }
 
+    void Slide()
+    {
+
+    }
+
     void Attack()
     {
-        if (!isAttackOne)
-        {
-            isAttackOne = true;
-            animator.SetBool("Attack1", true);
-        }
-        else
-        {
-            if (!isAttackTwo)
-            {
-                isAttackTwo = true;
-                animator.SetBool("Attack1", false);
-                animator.SetBool("Attack2", true);
-            }
-            else
-            {
-                animator.SetBool("Attack2", false);
-                animator.SetBool("Attack3", true);
-            }
-        }
+        animator.SetBool("Attack1", true);
+        canMove = false;
     }
 
     void AttackOneStart()
@@ -147,6 +148,8 @@ public class Movement : MonoBehaviour
     void AttackOneEnd()
     {
         isAttackOne = false;
+        animator.SetBool("Attack1", false);
+        canMove = true;
     }
 
     void AttackTwoStart()

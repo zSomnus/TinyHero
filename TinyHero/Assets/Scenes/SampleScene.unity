@@ -268,12 +268,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a856436a20b81549a5509beb11da0c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAttackOne: 0
+  isAttackTwo: 0
+  isAttackThree: 0
   walkSpeed: 6
   jumpSpeed: 8
   minJumpSpeed: 3
   maxFallSpeed: 5
-  fallMultiplier: 4
-  lowJumpMultiplier: 5
+  fallMultiplier: 5
+  lowJumpMultiplier: 6
+  attackCount: 0
+  canMove: 0
 --- !u!50 &585689244
 Rigidbody2D:
   serializedVersion: 4
