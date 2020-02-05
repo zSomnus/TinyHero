@@ -12,18 +12,30 @@ public class Movement : MonoBehaviour
     public bool isAttackThree;
 
     [SerializeField] float walkSpeed;
+
     [Space]
+
     [SerializeField] float jumpSpeed;
     [SerializeField] float minJumpSpeed;
     [SerializeField] float maxFallSpeed;
     [SerializeField] float fallMultiplier;
     [SerializeField] float lowJumpMultiplier;
 
+    [Space]
+
+    [SerializeField] float slideSpeed;
+
     Collision collision;
+    BoxCollider2D collider;
 
     Animator animator;
 
+    [Space]
+
     [SerializeField] int attackCount;
+
+    [Space]
+
     [SerializeField] bool canMove;
     // Start is called before the first frame update
     void Start()
@@ -31,6 +43,7 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         collision = GetComponent<Collision>();
+        collider = GetComponent<BoxCollider2D>();
         canMove = true;
     }
 
@@ -55,6 +68,12 @@ public class Movement : MonoBehaviour
             {
                 animator.SetBool("Moving", false);
             }
+        }
+
+        // Input Slide
+        if (Input.GetButtonDown("Slide"))
+        {
+            SlideStart();
         }
 
         if (collision.OnGround())
@@ -91,7 +110,7 @@ public class Movement : MonoBehaviour
 
         if (attackCount > 0)
         {
-            canMove = false;
+            //canMove = false;
             Attack();
             attackCount = 0;
         }
@@ -129,15 +148,34 @@ public class Movement : MonoBehaviour
         }
     }
 
-    void Slide()
+    void SlideStart()
     {
+        Debug.Log("SlideStart()");
+        animator.SetBool("Sliding", true);
+        collider.size = collision.slideColSize;
+        collider.offset = collision.slideColOffset;
+        rb.gravityScale = 0f;
+        rb.velocity = new Vector2(transform.localScale.x * slideSpeed, 0f);
+    }
 
+    void SlideEnd()
+    {
+        Debug.Log("SlideEnd()");
+        animator.SetBool("Sliding", false);
+        collider.size = collision.idleColSize;
+        collider.offset = collision.idleColOffset;
+        rb.gravityScale = 1f;
     }
 
     void Attack()
     {
-        animator.SetBool("Attack1", true);
-        canMove = false;
+        if (!isAttackOne)
+        {
+            animator.SetTrigger("Attack");
+            animator.SetBool("Attack1", true);
+            //canMove = false;
+
+        }
     }
 
     void AttackOneStart()
@@ -149,7 +187,7 @@ public class Movement : MonoBehaviour
     {
         isAttackOne = false;
         animator.SetBool("Attack1", false);
-        canMove = true;
+        //canMove = true;
     }
 
     void AttackTwoStart()

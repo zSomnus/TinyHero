@@ -277,6 +277,7 @@ MonoBehaviour:
   maxFallSpeed: 5
   fallMultiplier: 5
   lowJumpMultiplier: 6
+  slideSpeed: 2
   attackCount: 0
   canMove: 0
 --- !u!50 &585689244
@@ -415,7 +416,12 @@ MonoBehaviour:
   rightOffset: {x: 0.61, y: -0.07}
   leftOffset: {x: -0.61, y: -0.07}
   collisionRadius: 0.58
-  boxSize: {x: 0.24, y: 0.9}
+  boxSizeWall: {x: 0.25, y: 1.51}
+  boxSizeGround: {x: 1.11, y: 0.18}
+  slideColSize: {x: 1.57, y: 0.96}
+  slideColOffset: {x: 0.1, y: -0.62}
+  idleColSize: {x: 1.2, y: 1.83}
+  idleColOffset: {x: 0, y: -0.19}
 --- !u!1 &943494848
 GameObject:
   m_ObjectHideFlags: 0
