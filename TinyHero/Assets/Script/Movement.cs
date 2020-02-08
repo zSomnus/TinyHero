@@ -6,37 +6,41 @@ public class Movement : MonoBehaviour
 {
     Rigidbody2D rb;
 
+
     [Space]
+    [Header("Combo")]
     public bool isAttackOne;
     public bool isAttackTwo;
     public bool isAttackThree;
-
-    [SerializeField] float walkSpeed;
-
-    [Space]
-
-    [SerializeField] float jumpSpeed;
-    [SerializeField] float minJumpSpeed;
-    [SerializeField] float maxFallSpeed;
-    [SerializeField] float fallMultiplier;
-    [SerializeField] float lowJumpMultiplier;
-
-    [Space]
-
-    [SerializeField] float slideSpeed;
-
-    Collision collision;
-    BoxCollider2D collider;
-
-    Animator animator;
-
-    [Space]
-
     [SerializeField] int attackCount;
 
     [Space]
-
+    [Header("Walk")]
     [SerializeField] bool canMove;
+    [SerializeField] float walkSpeed;
+
+    [Space]
+    [Header("Jump")]
+    [SerializeField] float jumpSpeed;
+    [SerializeField] float minJumpSpeed;
+    [SerializeField] float maxFallSpeed;
+
+    [Space]
+    [Header("Slide")]
+    [SerializeField] float slideSpeed;
+    [SerializeField] bool isSliding;
+
+    [Space]
+    [Header("Multiplier")]
+    [SerializeField] float fallMultiplier;
+    [SerializeField] float lowJumpMultiplier;
+
+
+    Collision collision;
+    BoxCollider2D collider;
+    Animator animator;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,7 +60,13 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Sliding
+        if (isSliding)
+        {
+            transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
+        }
 
+        // Move right
         if (canMove)
         {
             Walk();
@@ -76,6 +86,7 @@ public class Movement : MonoBehaviour
             SlideStart();
         }
 
+        // Idle collision
         if (collision.OnGround())
         {
             animator.SetBool("Jumping", false);
@@ -86,6 +97,7 @@ public class Movement : MonoBehaviour
             animator.SetBool("Jumping", true);
         }
 
+        // Jump & fall
         if(rb.velocity.y > 0.5f)
         {
             animator.SetBool("Jumping", true);
@@ -101,6 +113,7 @@ public class Movement : MonoBehaviour
             animator.SetBool("Falling", false);
         }
 
+        // Attack
         if (Input.GetButtonDown("Fire1"))
         {
             attackCount++;
@@ -108,6 +121,7 @@ public class Movement : MonoBehaviour
             //Attack();
         }
 
+        // Attack combo
         if (attackCount > 0)
         {
             //canMove = false;
@@ -150,16 +164,18 @@ public class Movement : MonoBehaviour
 
     void SlideStart()
     {
+        isSliding = true;
         Debug.Log("SlideStart()");
         animator.SetBool("Sliding", true);
         collider.size = collision.slideColSize;
         collider.offset = collision.slideColOffset;
         rb.gravityScale = 0f;
-        rb.velocity = new Vector2(transform.localScale.x * slideSpeed, 0f);
+        //transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
     }
 
     void SlideEnd()
     {
+        isSliding = false;
         Debug.Log("SlideEnd()");
         animator.SetBool("Sliding", false);
         collider.size = collision.idleColSize;
