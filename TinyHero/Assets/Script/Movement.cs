@@ -6,23 +6,49 @@ public class Movement : MonoBehaviour
 {
     Rigidbody2D rb;
 
-    [SerializeField] float walkSpeed;
+
     [Space]
+    [Header("Combo")]
+    public bool isAttackOne;
+    public bool isAttackTwo;
+    public bool isAttackThree;
+    [SerializeField] int attackCount;
+
+    [Space]
+    [Header("Walk")]
+    [SerializeField] bool canMove;
+    [SerializeField] float walkSpeed;
+
+    [Space]
+    [Header("Jump")]
     [SerializeField] float jumpSpeed;
     [SerializeField] float minJumpSpeed;
     [SerializeField] float maxFallSpeed;
+
+    [Space]
+    [Header("Slide")]
+    [SerializeField] float slideSpeed;
+    [SerializeField] bool isSliding;
+
+    [Space]
+    [Header("Multiplier")]
     [SerializeField] float fallMultiplier;
     [SerializeField] float lowJumpMultiplier;
 
-    Collision collision;
 
+    Collision collision;
+    BoxCollider2D collider;
     Animator animator;
+
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         collision = GetComponent<Collision>();
+        collider = GetComponent<BoxCollider2D>();
+        canMove = true;
     }
 
     private void FixedUpdate()
@@ -34,18 +60,33 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-        Walk();
-        if(Input.GetAxis("Horizontal") != 0f)
+        // Sliding
+        if (isSliding)
         {
-            animator.SetBool("Moving", true);
-        }
-        else
-        {
-            animator.SetBool("Moving", false);
+            transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
         }
 
+        // Move right
+        if (canMove)
+        {
+            Walk();
+            if(Input.GetAxis("Horizontal") != 0f)
+            {
+                animator.SetBool("Moving", true);
+            }
+            else
+            {
+                animator.SetBool("Moving", false);
+            }
+        }
+
+        // Input Slide
+        if (Input.GetButtonDown("Slide"))
+        {
+            SlideStart();
+        }
+
+        // Idle collision
         if (collision.OnGround())
         {
             animator.SetBool("Jumping", false);
@@ -56,6 +97,7 @@ public class Movement : MonoBehaviour
             animator.SetBool("Jumping", true);
         }
 
+        // Jump & fall
         if(rb.velocity.y > 0.5f)
         {
             animator.SetBool("Jumping", true);
@@ -71,6 +113,21 @@ public class Movement : MonoBehaviour
             animator.SetBool("Falling", false);
         }
 
+        // Attack
+        if (Input.GetButtonDown("Fire1"))
+        {
+            attackCount++;
+            //animator.SetBool("Attacking", true);
+            //Attack();
+        }
+
+        // Attack combo
+        if (attackCount > 0)
+        {
+            //canMove = false;
+            Attack();
+            attackCount = 0;
+        }
         SimulatePhysics();
     }
 
@@ -105,12 +162,58 @@ public class Movement : MonoBehaviour
         }
     }
 
+    void SlideStart()
+    {
+        isSliding = true;
+        Debug.Log("SlideStart()");
+        animator.SetBool("Sliding", true);
+        collider.size = collision.slideColSize;
+        collider.offset = collision.slideColOffset;
+        rb.gravityScale = 0f;
+        //transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
+    }
+
+    void SlideEnd()
+    {
+        isSliding = false;
+        Debug.Log("SlideEnd()");
+        animator.SetBool("Sliding", false);
+        collider.size = collision.idleColSize;
+        collider.offset = collision.idleColOffset;
+        rb.gravityScale = 1f;
+    }
+
     void Attack()
     {
-        if (Input.GetButtonDown("Fire"))
+        if (!isAttackOne)
         {
-            animator.SetTrigger("Attack1");
+            animator.SetTrigger("Attack");
+            animator.SetBool("Attack1", true);
+            //canMove = false;
+
         }
+    }
+
+    void AttackOneStart()
+    {
+        isAttackOne = true;
+    }
+
+    void AttackOneEnd()
+    {
+        isAttackOne = false;
+        animator.SetBool("Attack1", false);
+        //canMove = true;
+    }
+
+    void AttackTwoStart()
+    {
+        isAttackTwo = true;
+    }
+
+    void AttackTwoEnd()
+    {
+        isAttackTwo = false;
     }
 
     void FlipSprite()
