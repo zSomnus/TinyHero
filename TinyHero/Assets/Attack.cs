@@ -36,7 +36,7 @@ public class Attack : MonoBehaviour
     {
         if (Input.GetKeyDown("Attack"))
         {
-            CheckAckInteractive(int dir);
+            //CheckAckInteractive(int dir);
         }
 
     }
