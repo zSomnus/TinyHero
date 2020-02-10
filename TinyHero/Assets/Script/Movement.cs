@@ -29,6 +29,7 @@ public class Movement : MonoBehaviour
     [Header("Slide")]
     [SerializeField] float slideSpeed;
     [SerializeField] bool isSliding;
+    [SerializeField] float slideCd;
 
     [Space]
     [Header("Multiplier")]
@@ -63,6 +64,7 @@ public class Movement : MonoBehaviour
         // Sliding
         if (isSliding)
         {
+            canMove = false;
             transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
         }
 
@@ -114,20 +116,20 @@ public class Movement : MonoBehaviour
         }
 
         // Attack
-        if (Input.GetButtonDown("Fire1"))
-        {
-            attackCount++;
-            //animator.SetBool("Attacking", true);
-            //Attack();
-        }
+        //if (Input.GetButtonDown("Fire1"))
+        //{
+        //    attackCount++;
+        //    //animator.SetBool("Attacking", true);
+        //    //Attack();
+        //}
 
-        // Attack combo
-        if (attackCount > 0)
-        {
-            //canMove = false;
-            Attack();
-            attackCount = 0;
-        }
+        //// Attack combo
+        //if (attackCount > 0)
+        //{
+        //    //canMove = false;
+        //    Attack();
+        //    attackCount = 0;
+        //}
         SimulatePhysics();
     }
 
@@ -162,8 +164,19 @@ public class Movement : MonoBehaviour
         }
     }
 
+    IEnumerator SlideMove(float time)
+    {
+        if (isSliding)
+        {
+            canMove = false;
+            transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
+        }
+        yield return new WaitForSeconds(time);
+    }
+
     void SlideStart()
     {
+        StartCoroutine(SlideMove(slideCd));
         isSliding = true;
         Debug.Log("SlideStart()");
         animator.SetBool("Sliding", true);
@@ -175,6 +188,7 @@ public class Movement : MonoBehaviour
 
     void SlideEnd()
     {
+        canMove = true;
         isSliding = false;
         Debug.Log("SlideEnd()");
         animator.SetBool("Sliding", false);
@@ -183,16 +197,16 @@ public class Movement : MonoBehaviour
         rb.gravityScale = 1f;
     }
 
-    void Attack()
-    {
-        if (!isAttackOne)
-        {
-            animator.SetTrigger("Attack");
-            animator.SetBool("Attack1", true);
-            //canMove = false;
+    //void Attack()
+    //{
+    //    if (!isAttackOne)
+    //    {
+    //        animator.SetTrigger("Attack");
+    //        animator.SetBool("Attack1", true);
+    //        //canMove = false;
 
-        }
-    }
+    //    }
+    //}
 
     void AttackOneStart()
     {
