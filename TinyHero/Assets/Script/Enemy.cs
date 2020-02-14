@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
         Debug.Log("Enemy died!");
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+        gameObject.SetActive(false);
     }
 
     // Update is called once per frame

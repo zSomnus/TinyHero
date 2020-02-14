@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
         // Sliding
-        if (isSliding)
+        if (isSliding && collision.OnGround())
         {
             canMove = false;
             transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
@@ -83,7 +83,7 @@ public class Movement : MonoBehaviour
         }
 
         // Input Slide
-        if (Input.GetButtonDown("Slide"))
+        if (Input.GetButtonDown("Slide") && collision.OnGround())
         {
             SlideStart();
         }
