@@ -38,6 +38,591 @@ TextureImporter:
   - first:
       213: 21300022
     second: parallax_bg_cave_blueish_5
+  - first:
+      213: -5202504124817286869
+    second: parallax_bg_cave_blueish_6
+  - first:
+      213: 2182458578378160712
+    second: parallax_bg_cave_blueish_7
+  - first:
+      213: -8295122304515469401
+    second: parallax_bg_cave_blueish_8
+  - first:
+      213: 6907851988829384269
+    second: parallax_bg_cave_blueish_9
+  - first:
+      213: -4911543273419519705
+    second: parallax_bg_cave_blueish_10
+  - first:
+      213: 9030427130000957220
+    second: parallax_bg_cave_blueish_11
+  - first:
+      213: 7863638643493013772
+    second: parallax_bg_cave_blueish_12
+  - first:
+      213: -806388434482131815
+    second: parallax_bg_cave_blueish_13
+  - first:
+      213: -2061519826181253591
+    second: parallax_bg_cave_blueish_14
+  - first:
+      213: 2393708264937075281
+    second: parallax_bg_cave_blueish_15
+  - first:
+      213: -7140992276255164793
+    second: parallax_bg_cave_blueish_16
+  - first:
+      213: -8692203883637420005
+    second: parallax_bg_cave_blueish_17
+  - first:
+      213: 1122870556679849137
+    second: parallax_bg_cave_blueish_18
+  - first:
+      213: 2424648339694720871
+    second: parallax_bg_cave_blueish_19
+  - first:
+      213: 2502353642851232413
+    second: parallax_bg_cave_blueish_20
+  - first:
+      213: 3552365146641455645
+    second: parallax_bg_cave_blueish_21
+  - first:
+      213: -39978142587737737
+    second: parallax_bg_cave_blueish_22
+  - first:
+      213: 49004428256921947
+    second: parallax_bg_cave_blueish_23
+  - first:
+      213: -8464507777733512147
+    second: parallax_bg_cave_blueish_24
+  - first:
+      213: 4194484071020984282
+    second: parallax_bg_cave_blueish_25
+  - first:
+      213: -3115483023248079865
+    second: parallax_bg_cave_blueish_26
+  - first:
+      213: -8862600237370912537
+    second: parallax_bg_cave_blueish_27
+  - first:
+      213: 2379174695276717374
+    second: parallax_bg_cave_blueish_28
+  - first:
+      213: 2125216107569637708
+    second: parallax_bg_cave_blueish_29
+  - first:
+      213: 3522647727408016136
+    second: parallax_bg_cave_blueish_30
+  - first:
+      213: 5724880820935739421
+    second: parallax_bg_cave_blueish_31
+  - first:
+      213: -2877663196010063260
+    second: parallax_bg_cave_blueish_32
+  - first:
+      213: 6742800210119237171
+    second: parallax_bg_cave_blueish_33
+  - first:
+      213: -44115431752820947
+    second: parallax_bg_cave_blueish_34
+  - first:
+      213: -1340778073360943848
+    second: parallax_bg_cave_blueish_35
+  - first:
+      213: 4248727392963904742
+    second: parallax_bg_cave_blueish_36
+  - first:
+      213: -6225726561711032195
+    second: parallax_bg_cave_blueish_37
+  - first:
+      213: 4710923536875849120
+    second: parallax_bg_cave_blueish_38
+  - first:
+      213: 5414831801291981836
+    second: parallax_bg_cave_blueish_39
+  - first:
+      213: 5751289474313101351
+    second: parallax_bg_cave_blueish_40
+  - first:
+      213: -1282151490070218309
+    second: parallax_bg_cave_blueish_41
+  - first:
+      213: -3288863513527934670
+    second: parallax_bg_cave_blueish_42
+  - first:
+      213: 6210651661044294892
+    second: parallax_bg_cave_blueish_43
+  - first:
+      213: -147390801830915490
+    second: parallax_bg_cave_blueish_44
+  - first:
+      213: -8964620301342104896
+    second: parallax_bg_cave_blueish_45
+  - first:
+      213: 6768953920569754785
+    second: parallax_bg_cave_blueish_46
+  - first:
+      213: 1015528834056195599
+    second: parallax_bg_cave_blueish_47
+  - first:
+      213: 97961215287644591
+    second: parallax_bg_cave_blueish_48
+  - first:
+      213: 8014065160418979561
+    second: parallax_bg_cave_blueish_49
+  - first:
+      213: 3590045877089965625
+    second: parallax_bg_cave_blueish_50
+  - first:
+      213: 829224112940700467
+    second: parallax_bg_cave_blueish_51
+  - first:
+      213: 3146331326791653112
+    second: parallax_bg_cave_blueish_52
+  - first:
+      213: 5419337274369528239
+    second: parallax_bg_cave_blueish_53
+  - first:
+      213: 7439763514286477633
+    second: parallax_bg_cave_blueish_54
+  - first:
+      213: 2021058518812472622
+    second: parallax_bg_cave_blueish_55
+  - first:
+      213: -392128306016518147
+    second: parallax_bg_cave_blueish_56
+  - first:
+      213: -6431692883023293189
+    second: parallax_bg_cave_blueish_57
+  - first:
+      213: -8625289091840251140
+    second: parallax_bg_cave_blueish_58
+  - first:
+      213: 4085864155114816023
+    second: parallax_bg_cave_blueish_59
+  - first:
+      213: 6426464553173123363
+    second: parallax_bg_cave_blueish_60
+  - first:
+      213: -1499489535993961115
+    second: parallax_bg_cave_blueish_61
+  - first:
+      213: -5987757193883895735
+    second: parallax_bg_cave_blueish_62
+  - first:
+      213: 8888174499239730027
+    second: parallax_bg_cave_blueish_63
+  - first:
+      213: -3547753058007496801
+    second: parallax_bg_cave_blueish_64
+  - first:
+      213: 6593525979273460845
+    second: parallax_bg_cave_blueish_65
+  - first:
+      213: 9215992758290511313
+    second: parallax_bg_cave_blueish_66
+  - first:
+      213: -8368752507876874807
+    second: parallax_bg_cave_blueish_67
+  - first:
+      213: 2206904999615142632
+    second: parallax_bg_cave_blueish_68
+  - first:
+      213: -6327164854475729488
+    second: parallax_bg_cave_blueish_69
+  - first:
+      213: 5376010149057116809
+    second: parallax_bg_cave_blueish_70
+  - first:
+      213: -1621117102211270202
+    second: parallax_bg_cave_blueish_71
+  - first:
+      213: 5857287435799691409
+    second: parallax_bg_cave_blueish_72
+  - first:
+      213: 3626445220132096960
+    second: parallax_bg_cave_blueish_73
+  - first:
+      213: 5093500447233836599
+    second: parallax_bg_cave_blueish_74
+  - first:
+      213: 7179463702464617160
+    second: parallax_bg_cave_blueish_75
+  - first:
+      213: 6273139838088771230
+    second: parallax_bg_cave_blueish_76
+  - first:
+      213: -5388739170358597238
+    second: parallax_bg_cave_blueish_77
+  - first:
+      213: -8018655044776489449
+    second: parallax_bg_cave_blueish_78
+  - first:
+      213: 12101467033765605
+    second: parallax_bg_cave_blueish_79
+  - first:
+      213: -368395010625660747
+    second: parallax_bg_cave_blueish_80
+  - first:
+      213: -4681432445605722281
+    second: parallax_bg_cave_blueish_81
+  - first:
+      213: -8905638091346940093
+    second: parallax_bg_cave_blueish_82
+  - first:
+      213: 1207375304325723854
+    second: parallax_bg_cave_blueish_83
+  - first:
+      213: -6423297312294072347
+    second: parallax_bg_cave_blueish_84
+  - first:
+      213: 7892308093685073970
+    second: parallax_bg_cave_blueish_85
+  - first:
+      213: 6045016583114477191
+    second: parallax_bg_cave_blueish_86
+  - first:
+      213: -8958899153787623904
+    second: parallax_bg_cave_blueish_87
+  - first:
+      213: -8950323296388052784
+    second: parallax_bg_cave_blueish_88
+  - first:
+      213: 548404049737255041
+    second: parallax_bg_cave_blueish_89
+  - first:
+      213: -6167205409441434707
+    second: parallax_bg_cave_blueish_90
+  - first:
+      213: -8660257705765544535
+    second: parallax_bg_cave_blueish_91
+  - first:
+      213: -4347773521293338506
+    second: parallax_bg_cave_blueish_92
+  - first:
+      213: 8768926753825658822
+    second: parallax_bg_cave_blueish_93
+  - first:
+      213: 1401751741019428807
+    second: parallax_bg_cave_blueish_94
+  - first:
+      213: 2548884569910586879
+    second: parallax_bg_cave_blueish_95
+  - first:
+      213: 7340961897011028191
+    second: parallax_bg_cave_blueish_96
+  - first:
+      213: 1854180689749989791
+    second: parallax_bg_cave_blueish_97
+  - first:
+      213: 5634627514382637011
+    second: parallax_bg_cave_blueish_98
+  - first:
+      213: -8829716128114513946
+    second: parallax_bg_cave_blueish_99
+  - first:
+      213: 5848777660702772426
+    second: parallax_bg_cave_blueish_100
+  - first:
+      213: 2098622653276320617
+    second: parallax_bg_cave_blueish_101
+  - first:
+      213: -4128854618135915838
+    second: parallax_bg_cave_blueish_102
+  - first:
+      213: -8109310060121495680
+    second: parallax_bg_cave_blueish_103
+  - first:
+      213: -1228806112762450667
+    second: parallax_bg_cave_blueish_104
+  - first:
+      213: 9054630527980005085
+    second: parallax_bg_cave_blueish_105
+  - first:
+      213: 1123840625492406826
+    second: parallax_bg_cave_blueish_106
+  - first:
+      213: 2631491176130639507
+    second: parallax_bg_cave_blueish_107
+  - first:
+      213: -8238877129788128059
+    second: parallax_bg_cave_blueish_108
+  - first:
+      213: -623301133397535898
+    second: parallax_bg_cave_blueish_109
+  - first:
+      213: 9019174752101301382
+    second: parallax_bg_cave_blueish_110
+  - first:
+      213: -7844586006986659060
+    second: parallax_bg_cave_blueish_111
+  - first:
+      213: -5257057634740282841
+    second: parallax_bg_cave_blueish_112
+  - first:
+      213: 3152023633912073017
+    second: parallax_bg_cave_blueish_113
+  - first:
+      213: -7234772536430930071
+    second: parallax_bg_cave_blueish_114
+  - first:
+      213: 5828391887870510981
+    second: parallax_bg_cave_blueish_115
+  - first:
+      213: 2327124283395221815
+    second: parallax_bg_cave_blueish_116
+  - first:
+      213: 8041454536059637329
+    second: parallax_bg_cave_blueish_117
+  - first:
+      213: -6734098373930045509
+    second: parallax_bg_cave_blueish_118
+  - first:
+      213: 2371043313750986771
+    second: parallax_bg_cave_blueish_119
+  - first:
+      213: -3965594112490061862
+    second: parallax_bg_cave_blueish_120
+  - first:
+      213: -4844589144269093379
+    second: parallax_bg_cave_blueish_121
+  - first:
+      213: 1873638705945930662
+    second: parallax_bg_cave_blueish_122
+  - first:
+      213: -493548581124834229
+    second: parallax_bg_cave_blueish_123
+  - first:
+      213: 3498243545118555255
+    second: parallax_bg_cave_blueish_124
+  - first:
+      213: 4859175975181535734
+    second: parallax_bg_cave_blueish_125
+  - first:
+      213: 5611553180670294567
+    second: parallax_bg_cave_blueish_126
+  - first:
+      213: 8004953804146952564
+    second: parallax_bg_cave_blueish_127
+  - first:
+      213: -8576464643435742253
+    second: parallax_bg_cave_blueish_128
+  - first:
+      213: -9189086253135243334
+    second: parallax_bg_cave_blueish_129
+  - first:
+      213: -2235948867785071597
+    second: parallax_bg_cave_blueish_130
+  - first:
+      213: 3439189056058018003
+    second: parallax_bg_cave_blueish_131
+  - first:
+      213: -5650801925934734895
+    second: parallax_bg_cave_blueish_132
+  - first:
+      213: 3617673500178703495
+    second: parallax_bg_cave_blueish_133
+  - first:
+      213: 5175413257469000298
+    second: parallax_bg_cave_blueish_134
+  - first:
+      213: -4320886316107338843
+    second: parallax_bg_cave_blueish_135
+  - first:
+      213: 3881104346325524490
+    second: parallax_bg_cave_blueish_136
+  - first:
+      213: 7366595203564583815
+    second: parallax_bg_cave_blueish_137
+  - first:
+      213: -1964185203696519656
+    second: parallax_bg_cave_blueish_138
+  - first:
+      213: -658574425292723046
+    second: parallax_bg_cave_blueish_139
+  - first:
+      213: 4899982625214999935
+    second: parallax_bg_cave_blueish_140
+  - first:
+      213: -2353446194394418434
+    second: parallax_bg_cave_blueish_141
+  - first:
+      213: -1652903784334894013
+    second: parallax_bg_cave_blueish_142
+  - first:
+      213: -469325576891463873
+    second: parallax_bg_cave_blueish_143
+  - first:
+      213: 2147373808774822298
+    second: parallax_bg_cave_blueish_144
+  - first:
+      213: 6026083784979340476
+    second: parallax_bg_cave_blueish_145
+  - first:
+      213: -5262063911254899444
+    second: parallax_bg_cave_blueish_146
+  - first:
+      213: -6927387830411912699
+    second: parallax_bg_cave_blueish_147
+  - first:
+      213: -4611552727544103546
+    second: parallax_bg_cave_blueish_148
+  - first:
+      213: -3080297916315368142
+    second: parallax_bg_cave_blueish_149
+  - first:
+      213: -7536623519105919070
+    second: parallax_bg_cave_blueish_150
+  - first:
+      213: -3286005344274032925
+    second: parallax_bg_cave_blueish_151
+  - first:
+      213: -7346175286934850242
+    second: parallax_bg_cave_blueish_152
+  - first:
+      213: 7767416492024866144
+    second: parallax_bg_cave_blueish_153
+  - first:
+      213: 6229788909562946812
+    second: parallax_bg_cave_blueish_154
+  - first:
+      213: 6604794799452052427
+    second: parallax_bg_cave_blueish_155
+  - first:
+      213: 4766658587620808259
+    second: parallax_bg_cave_blueish_156
+  - first:
+      213: -7375467532837007626
+    second: parallax_bg_cave_blueish_157
+  - first:
+      213: -1568470142829376310
+    second: parallax_bg_cave_blueish_158
+  - first:
+      213: -7518772322422122769
+    second: parallax_bg_cave_blueish_159
+  - first:
+      213: -6051004931006807875
+    second: parallax_bg_cave_blueish_160
+  - first:
+      213: -8221821416602289631
+    second: parallax_bg_cave_blueish_161
+  - first:
+      213: 5090230912952235166
+    second: parallax_bg_cave_blueish_162
+  - first:
+      213: -1813197802786294699
+    second: parallax_bg_cave_blueish_163
+  - first:
+      213: -6926459524686881144
+    second: parallax_bg_cave_blueish_164
+  - first:
+      213: -8503947533808691358
+    second: parallax_bg_cave_blueish_165
+  - first:
+      213: -7709105174840746290
+    second: parallax_bg_cave_blueish_166
+  - first:
+      213: 6005454690059615392
+    second: parallax_bg_cave_blueish_167
+  - first:
+      213: 457180038537273293
+    second: parallax_bg_cave_blueish_168
+  - first:
+      213: 2847384783222730528
+    second: parallax_bg_cave_blueish_169
+  - first:
+      213: 7671796555453455528
+    second: parallax_bg_cave_blueish_170
+  - first:
+      213: -7685806263218531901
+    second: parallax_bg_cave_blueish_171
+  - first:
+      213: 2031100760993670790
+    second: parallax_bg_cave_blueish_172
+  - first:
+      213: 4996883717199284134
+    second: parallax_bg_cave_blueish_173
+  - first:
+      213: 4412123345189040203
+    second: parallax_bg_cave_blueish_174
+  - first:
+      213: -2509639541857174285
+    second: parallax_bg_cave_blueish_175
+  - first:
+      213: -4592090119886850605
+    second: parallax_bg_cave_blueish_176
+  - first:
+      213: 3971769299505075055
+    second: parallax_bg_cave_blueish_177
+  - first:
+      213: -3362662075299059130
+    second: parallax_bg_cave_blueish_178
+  - first:
+      213: 6666166690883487322
+    second: parallax_bg_cave_blueish_179
+  - first:
+      213: 718995066822918907
+    second: parallax_bg_cave_blueish_180
+  - first:
+      213: -2444520123593543186
+    second: parallax_bg_cave_blueish_181
+  - first:
+      213: -4776222970953886445
+    second: parallax_bg_cave_blueish_182
+  - first:
+      213: 3942186199250981850
+    second: parallax_bg_cave_blueish_183
+  - first:
+      213: -2680126412863617468
+    second: parallax_bg_cave_blueish_184
+  - first:
+      213: -2270897448565052959
+    second: parallax_bg_cave_blueish_185
+  - first:
+      213: -8649003665079889879
+    second: parallax_bg_cave_blueish_186
+  - first:
+      213: 642838683724332748
+    second: parallax_bg_cave_blueish_187
+  - first:
+      213: 6114818414174856860
+    second: parallax_bg_cave_blueish_188
+  - first:
+      213: -4316022134154300526
+    second: parallax_bg_cave_blueish_189
+  - first:
+      213: 6902445362766338592
+    second: parallax_bg_cave_blueish_190
+  - first:
+      213: 2886750766876858798
+    second: parallax_bg_cave_blueish_191
+  - first:
+      213: 323588799683323746
+    second: parallax_bg_cave_blueish_192
+  - first:
+      213: -68131984583926952
+    second: parallax_bg_cave_blueish_193
+  - first:
+      213: -9056615961309744423
+    second: parallax_bg_cave_blueish_194
+  - first:
+      213: 1488752765380062660
+    second: parallax_bg_cave_blueish_195
+  - first:
+      213: -2707847648489989690
+    second: parallax_bg_cave_blueish_196
+  - first:
+      213: -5328625224419975148
+    second: parallax_bg_cave_blueish_197
+  - first:
+      213: -5343668801081394210
+    second: parallax_bg_cave_blueish_198
+  - first:
+      213: 1118435340808951645
+    second: parallax_bg_cave_blueish_199
+  - first:
+      213: -7410112326563931003
+    second: parallax_bg_cave_blueish_200
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -81,7 +666,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -158,9 +743,9 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c2305410000000000800000000000000
+      spriteID: 97c72c1d17c66f64aa1d23406f2f4766
       internalID: 21300012
       vertices: []
       indices: 
@@ -171,17 +756,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 112
-        width: 112
-        height: 160
+        y: 256
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e2305410000000000800000000000000
+      spriteID: d5e1eaf5ee8e4404b8886077c38d4e4c
       internalID: 21300014
       vertices: []
       indices: 
@@ -191,18 +776,18 @@ TextureImporter:
       name: parallax_bg_cave_blueish_2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 112
-        width: 64
-        height: 64
+        x: 208
+        y: 256
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 03305410000000000800000000000000
+      spriteID: 823bd939fcf328c44b1fac7b1cff134f
       internalID: 21300016
       vertices: []
       indices: 
@@ -212,18 +797,18 @@ TextureImporter:
       name: parallax_bg_cave_blueish_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 112
-        width: 80
-        height: 112
+        x: 224
+        y: 256
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 23305410000000000800000000000000
+      spriteID: 8b4d0528326062f44a118e984fe7cf52
       internalID: 21300018
       vertices: []
       indices: 
@@ -233,18 +818,18 @@ TextureImporter:
       name: parallax_bg_cave_blueish_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 96
-        height: 80
+        x: 240
+        y: 256
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 43305410000000000800000000000000
+      spriteID: b5c04b14a8696974c9a7146a3e06a19e
       internalID: 21300020
       vertices: []
       indices: 
@@ -254,19 +839,4114 @@ TextureImporter:
       name: parallax_bg_cave_blueish_5
       rect:
         serializedVersion: 2
-        x: 112
-        y: 0
-        width: 192
-        height: 96
+        x: 256
+        y: 256
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 63305410000000000800000000000000
+      spriteID: 4ecb2b04999364844824a379f6ae0ca4
       internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_6
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45b70603033e784db79cd45c751a13c
+      internalID: -5202504124817286869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4350291f2e5cbfb4381247269bcf4744
+      internalID: 2182458578378160712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6798135e0c5668d4086b77c41fa268e5
+      internalID: -8295122304515469401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b1f07ecebb4cf44bc3bce1f3cfb50a
+      internalID: 6907851988829384269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_10
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deda773ce1e78c5459bc96c6ef3988fc
+      internalID: -4911543273419519705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89325d115f56ecc47b370d9152b431e1
+      internalID: 9030427130000957220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e985f8af3f4d6d6449e0d0ef61f983d3
+      internalID: 7863638643493013772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_13
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38cd3d0995d3914da630fa7447d6b25
+      internalID: -806388434482131815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0656a98c09a111c468dc92cca6e750d2
+      internalID: -2061519826181253591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3ff4e184a60f041b61293ae5bd298b
+      internalID: 2393708264937075281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_16
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929a1f972243e2f438c0a9b60d55f99e
+      internalID: -7140992276255164793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f946b36d59277a44aae8b6e28ea91d15
+      internalID: -8692203883637420005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5062342bbbb5fd94d93380d8fc8387bc
+      internalID: 1122870556679849137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_19
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58bc18225a71ce41829821ed10544a6
+      internalID: 2424648339694720871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_20
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab0260b863ae6c40919f731754094e5
+      internalID: 2502353642851232413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2132857b7580d544b896dee1aa510d67
+      internalID: 3552365146641455645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_22
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d0996cafa92154aab7b874e9b591f7
+      internalID: -39978142587737737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8fca67e60d712458ddeda99678c5d7
+      internalID: 49004428256921947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_24
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de071343c148a4419b58ce0c1c1a5ed
+      internalID: -8464507777733512147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e1ed6e7a82d6e4f89799509b2e84d5
+      internalID: 4194484071020984282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccac8b55d8980e4da7fea458127cb89
+      internalID: -3115483023248079865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc95f12431867ba42bface1ddb9d60ce
+      internalID: -8862600237370912537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_28
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe1d45a4d778984fb0e47ead2d2ac85
+      internalID: 2379174695276717374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac373c10fbb5ab341a4917a5dfdf2e3c
+      internalID: 2125216107569637708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_30
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60048b2f03f3b63419eaa7f7976249a3
+      internalID: 3522647727408016136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_31
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22c8d31f1c5b5e48ad9245aafacbf02
+      internalID: 5724880820935739421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_32
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230ae01491a34b340b79842c108d0825
+      internalID: -2877663196010063260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_33
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f131a46473dbac74190d39d363fe64d8
+      internalID: 6742800210119237171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_34
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8a7e0d13c84b04f9ae66b5bdd5c8f5
+      internalID: -44115431752820947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53889ea5c8c4d7b4d8173902c90890fd
+      internalID: -1340778073360943848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_36
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b537483d3e36a43aa3df3dce2de2fb
+      internalID: 4248727392963904742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_37
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1fbfe07e7e64cf4380eabd0baf03a0f
+      internalID: -6225726561711032195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_38
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a33fed6543214f4f900e50121b9690c
+      internalID: 4710923536875849120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_39
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e30752b3d2abf4fa4d36a687904316
+      internalID: 5414831801291981836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_40
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452933d17d1854846b7132e30a7af7ea
+      internalID: 5751289474313101351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_41
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d9a43c698a4ec48821f1eab54920cc
+      internalID: -1282151490070218309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_42
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd6ebdedaf86b349bdeb2a191f699e1
+      internalID: -3288863513527934670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_43
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeeaa1cddde836f4b84d6ecea18add1a
+      internalID: 6210651661044294892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_44
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49611fe8b20c82c4eb448a98249acd05
+      internalID: -147390801830915490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_45
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43254b5deb3bf8446835c4b2f00b9a82
+      internalID: -8964620301342104896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_46
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e3d3db8a765974fbe95125c7970f4d
+      internalID: 6768953920569754785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_47
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08763e6cf4191d4aa11ecc298f0031d
+      internalID: 1015528834056195599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_48
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7b8eeb52e799746976ae4ca78a54b7
+      internalID: 97961215287644591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_49
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf9f466efd341c4a8d98d5dffd9a33a
+      internalID: 8014065160418979561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1085842502598e8438b9d1a249722da0
+      internalID: 3590045877089965625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4f8420423ee304da03dc285b946ae0
+      internalID: 829224112940700467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6fdae1f6a3fb14fa6f2b123a3b7e0d
+      internalID: 3146331326791653112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_53
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9ff67aac22e50459fc038f7499ce75
+      internalID: 5419337274369528239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_54
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be941e31b55ec44ca3e257e458ee7da
+      internalID: 7439763514286477633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_55
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d748615120b0c241ac68a700951ee73
+      internalID: 2021058518812472622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_56
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94a7128af5d7cf49b416f3514e27780
+      internalID: -392128306016518147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_57
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af0d9d2597980d4a8913f1e2f26ffc5
+      internalID: -6431692883023293189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_58
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbc63a62be4a624a867befa0b1acbb8
+      internalID: -8625289091840251140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_59
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512386c955e278a4ebd169edd4a3c30e
+      internalID: 4085864155114816023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_60
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d25ee265c194d543ab9ba255e3d0d00
+      internalID: 6426464553173123363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_61
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44f657df30f68f4ba10d9804c30ab52
+      internalID: -1499489535993961115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_62
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305af118c649d0b49a76c80cdcae45ef
+      internalID: -5987757193883895735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_63
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595f93bdca841e545871d3759e817f0a
+      internalID: 8888174499239730027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_64
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7a0dc54fc38ca4c878e49740e3c6be
+      internalID: -3547753058007496801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_65
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a263bee3d293c94e95f3efd73a4fff4
+      internalID: 6593525979273460845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_66
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc58aab866a0ef45ab55208f10086a0
+      internalID: 9215992758290511313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_67
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8f8916bfcd8a64bb2558943a21f7c6
+      internalID: -8368752507876874807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_68
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1203ee92bbd4c7b49bd76f54fb42b550
+      internalID: 2206904999615142632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_69
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d4301368ce3c744abae8d400f3eb2f
+      internalID: -6327164854475729488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_70
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f26883d2b168248b5de0e6f3d69a77
+      internalID: 5376010149057116809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_71
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f165184db1b1476498db18e67d1e120e
+      internalID: -1621117102211270202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_72
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab47d89c9afdc642a20814e7642abac
+      internalID: 5857287435799691409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_73
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6ea7b970cd9684387bf70b7f9012b9
+      internalID: 3626445220132096960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_74
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec586313f0fe624b85d795b18c0f645
+      internalID: 5093500447233836599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_75
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f0274f58689a14686f1ed4ea4904e4
+      internalID: 7179463702464617160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_76
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ebff3c4adc2a94fa01e2529af8a829
+      internalID: 6273139838088771230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_77
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177be836b8e156148adc60f8efcf6a3d
+      internalID: -5388739170358597238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_78
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13f08c8d54602645861bd509ec3a826
+      internalID: -8018655044776489449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_79
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4d2f37bf1c4e04188cc39eac329342
+      internalID: 12101467033765605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_80
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653bd1e182ee09d4facf008cd0dd17e8
+      internalID: -368395010625660747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_81
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d50bf06ecfaed4f9860ceeac1c8df7
+      internalID: -4681432445605722281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_82
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc85edcdd7f18e84b8567bc07e4c8367
+      internalID: -8905638091346940093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_83
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8720a10092778214e8149398fc206e3d
+      internalID: 1207375304325723854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_84
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184225e4103c9a5498a79331da431b16
+      internalID: -6423297312294072347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_85
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916c8931b5698ee41bca839436844a8c
+      internalID: 7892308093685073970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_86
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a731161cc0e25be43a4ba176c956d428
+      internalID: 6045016583114477191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_87
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f5fdb5bef318f47bbeda4d831b8723
+      internalID: -8958899153787623904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_88
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f210995e61637cd48a837c539e6ff383
+      internalID: -8950323296388052784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_89
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603616de3b650a54a97b5f49f5a889df
+      internalID: 548404049737255041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_90
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fb38cc42452454888a2f42ef2f6b07
+      internalID: -6167205409441434707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_91
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd22f75b31748546a12f1a4c204c79b
+      internalID: -8660257705765544535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adbd2545f41bc944a05e9d5277ec293
+      internalID: -4347773521293338506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_93
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560265df892f1874f9b4a6b830b3abc1
+      internalID: 8768926753825658822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_94
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac384431a932de741b2157abd35c3a7d
+      internalID: 1401751741019428807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_95
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60cb9ef7dacd44b4c909266ab90e6f25
+      internalID: 2548884569910586879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_96
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ceb52dc75ec1d439225262a97ef6c9
+      internalID: 7340961897011028191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_97
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbeaf009d4d89804497e5ac77836cf47
+      internalID: 1854180689749989791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_98
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26dd651321ea85a4d80f45f49d2bcb7c
+      internalID: 5634627514382637011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_99
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2134e30970af361458f05f369ee83905
+      internalID: -8829716128114513946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_100
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dd309e56cf45e4f9aaafae57905bfb
+      internalID: 5848777660702772426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_101
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5cf87ae4226d874a838690ec4deb957
+      internalID: 2098622653276320617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_102
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452d91eccdb7ffd46974aa0b94472050
+      internalID: -4128854618135915838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_103
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c095495fb3f8ca24eb04122d27478eed
+      internalID: -8109310060121495680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_104
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e782dd58ada384e8287de74a51f98c
+      internalID: -1228806112762450667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_105
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1d16ce35e109d4e9ba670734da1685
+      internalID: 9054630527980005085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_106
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1039ea1cb66a24bb218f61f84fb854
+      internalID: 1123840625492406826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_107
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22433f43dbb298c40a3540c0ae0fe270
+      internalID: 2631491176130639507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_108
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425ac4afc022b5e4c904cb89bbe18497
+      internalID: -8238877129788128059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_109
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1d66c6637d045499f322892ec43a53
+      internalID: -623301133397535898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_110
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5195faf73a63be4d86231e5185821f8
+      internalID: 9019174752101301382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_111
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156b65124838a444d8e1f5b5da34cc99
+      internalID: -7844586006986659060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_112
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bc25c8ff4143b4a85f3aec6f278cdb
+      internalID: -5257057634740282841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_113
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820fed30a74e29f48a4dbaee4651eda2
+      internalID: 3152023633912073017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_114
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0df110695e08a4482b1e4707ee3754
+      internalID: -7234772536430930071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_115
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739c09bd216cce54da9fbf5e63494bbf
+      internalID: 5828391887870510981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_116
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2638160fa5fd147966e474c58221d5
+      internalID: 2327124283395221815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_117
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb2840e03e61b646b18445d30f14aa1
+      internalID: 8041454536059637329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_118
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7698b5ef41a1b044dad96c4d62989c77
+      internalID: -6734098373930045509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_119
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2843b076ad77044ab20c1866438415
+      internalID: 2371043313750986771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_120
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27c32e3df5f30f418db6604c9dbb08f
+      internalID: -3965594112490061862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_121
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5443fddd8ea3f3a4da42643372741060
+      internalID: -4844589144269093379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_122
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a854503d0e2a84d917e8395812f0b1
+      internalID: 1873638705945930662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_123
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8040076d77156404fa58cee451fe8dc1
+      internalID: -493548581124834229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_124
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0131376b78bdf48a81f25d4be3c906
+      internalID: 3498243545118555255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_125
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17196ca553cbd3f4f822edf3419c530a
+      internalID: 4859175975181535734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_126
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea8f72888a3ff645b450780fbcf8033
+      internalID: 5611553180670294567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_127
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0275530498408498448d6ba70b6665
+      internalID: 8004953804146952564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_128
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143681b64d9dee040b0d519c2bf15505
+      internalID: -8576464643435742253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_129
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ff3fba05f5dfb44ab5b5cd5b6b702b
+      internalID: -9189086253135243334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_130
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3417f8b8fd8d3468cbff8cd31bbddb
+      internalID: -2235948867785071597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_131
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f0e96a82d91aa4bb6b87c8c419f1c1
+      internalID: 3439189056058018003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_132
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0d77869a15df44fb2b1b4ad31a201c
+      internalID: -5650801925934734895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_133
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b974f4997c7e04782c05e445542dd3
+      internalID: 3617673500178703495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_134
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c394915cffa704e45b3be2ef7419d42b
+      internalID: 5175413257469000298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_135
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d71722fdcc9e0f48b3981bcd1272091
+      internalID: -4320886316107338843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_136
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c83cba99cbf0341b059f226aff91b8
+      internalID: 3881104346325524490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_137
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef3edf20446c2940aa8fbae9b0046db
+      internalID: 7366595203564583815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_138
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2401ddb17c7362347bd144da759f9855
+      internalID: -1964185203696519656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_139
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d29422d2d7230428463e7671ce09b1
+      internalID: -658574425292723046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_140
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba8ec3390c9e2b459e7728477e0156f
+      internalID: 4899982625214999935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_141
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50243a01414ab0c4d87ecd23ea0acdd4
+      internalID: -2353446194394418434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_142
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e42adeb0cc2f7a4f97ac19969a67787
+      internalID: -1652903784334894013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_143
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de619139bc72ac4f89185aa65820ce4
+      internalID: -469325576891463873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_144
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f031c2ac2c76fc44be6eb32c4cc14e2
+      internalID: 2147373808774822298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_145
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdbf8a8d1e43e946949ff6fe47b068c
+      internalID: 6026083784979340476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_146
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c4f7c2eee69b94482aa03dcb506c98
+      internalID: -5262063911254899444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_147
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e63db1c13c2b5948aa5bb367db9b2e0
+      internalID: -6927387830411912699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_148
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2377e4a7dcf2e9545939cf0b7360e78c
+      internalID: -4611552727544103546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_149
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833b4ecf66b096d4cb09ac78a5fc5a17
+      internalID: -3080297916315368142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_150
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c96cd440dad7f44f871edd63a2edf48
+      internalID: -7536623519105919070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_151
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24d8723361244b4a95dee7024995b63
+      internalID: -3286005344274032925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_152
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01cabdf991a415a40a758e8665b2dc3c
+      internalID: -7346175286934850242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_153
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6d7c5cea5ab50409a53a153a669cd4
+      internalID: 7767416492024866144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_154
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4988c75c36cd1fa47bceb70d3e5c3f38
+      internalID: 6229788909562946812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_155
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81dd98b89d13fe14590939816a561256
+      internalID: 6604794799452052427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_156
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ee5b2e07c40984d9d1f1b7feda6c10
+      internalID: 4766658587620808259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_157
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56bdf9d945cc60e44861ca87d7b0b53a
+      internalID: -7375467532837007626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_158
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6892d60a1f55ffc4ebf5f2526c59daf2
+      internalID: -1568470142829376310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_159
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704b8cf4daa780e4c8400440e1d1a99c
+      internalID: -7518772322422122769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_160
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d639b6038cb1a244ade239d161b1427
+      internalID: -6051004931006807875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_161
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7e741fa99d9c947b98046b623da345
+      internalID: -8221821416602289631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_162
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ebb79093cbf6b44be1562c0f811799
+      internalID: 5090230912952235166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_163
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0b5ee0c50be2449a429dd4f0d820e4
+      internalID: -1813197802786294699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_164
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a795c0ec7cdd44381ac2ba287364e6
+      internalID: -6926459524686881144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_165
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5bfe65663dfb9a4b9c13aab4b066c91
+      internalID: -8503947533808691358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_166
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209aa9bf1f1fbb745a4a2ba0aa6154d2
+      internalID: -7709105174840746290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_167
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f859b9944fde4c469bdfa2c3ca6f1a9
+      internalID: 6005454690059615392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_168
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edce8f2d06b8044eb6c07623740b82e
+      internalID: 457180038537273293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_169
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6de079365986446b1ad1e1ede48bbe
+      internalID: 2847384783222730528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_170
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96cae6785bba1534dbf5c61e836ff599
+      internalID: 7671796555453455528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_171
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15b3b1643dd67643b7ba7cfb82ef26b
+      internalID: -7685806263218531901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_172
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e075cc67b234c334280b00a74036c034
+      internalID: 2031100760993670790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_173
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6bf0b2ce03855438508cde20557fba
+      internalID: 4996883717199284134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_174
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d31ec955a63b14daa74c3575aa10f6
+      internalID: 4412123345189040203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_175
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2bb3b244996d14788cd5a9de78fb1c
+      internalID: -2509639541857174285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_176
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544163ce15919aa4d98171443f307a82
+      internalID: -4592090119886850605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_177
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbf30ea47ee87b43b80c0b24793c014
+      internalID: 3971769299505075055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_178
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b9dc666dc70d149a73224c5aafb9f1
+      internalID: -3362662075299059130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_179
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff4d3916a7285a4b907feced5279f53
+      internalID: 6666166690883487322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_180
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da693e82b9fcb149ab6cde55a648d60
+      internalID: 718995066822918907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_181
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56d61208c2ea9447bb54a14ef1e2715
+      internalID: -2444520123593543186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_182
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cac97ca21b4284cb55d2cb2a174e7c
+      internalID: -4776222970953886445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_183
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34cd2e854ec8afe41af4524b9e01e551
+      internalID: 3942186199250981850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_184
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f3d13177e3dae4295a56b5f7b9222c
+      internalID: -2680126412863617468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_185
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8463555915353c44a74a3110880e870
+      internalID: -2270897448565052959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_186
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c8b64796a85034988bf4a7f0489587
+      internalID: -8649003665079889879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_187
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930635046f57ec2478d4c08d18b71994
+      internalID: 642838683724332748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_188
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0447749a2bf8623409139d5c3ef74117
+      internalID: 6114818414174856860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_189
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffa5962ff1153b4984183164d4680ea
+      internalID: -4316022134154300526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_190
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c0b55ea7a53974b94c0524013083ac
+      internalID: 6902445362766338592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_191
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c179ef1184262d41a75ed29d426ebe4
+      internalID: 2886750766876858798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_192
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b947fb885cfbb148a7d242664b86516
+      internalID: 323588799683323746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_193
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ca54732a40ba844926307a6aa888a1
+      internalID: -68131984583926952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_194
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54210099ccb115b47ac40ef55f14dddf
+      internalID: -9056615961309744423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_195
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76fd0ab637874544887eb2e08c23567
+      internalID: 1488752765380062660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_196
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c34b4be4f41c946ae73bc7d4347869
+      internalID: -2707847648489989690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_197
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a213cc73ba85aa4fa3e146f83419b62
+      internalID: -5328625224419975148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_198
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc9c4cebde519e439d7a797f51c61a1
+      internalID: -5343668801081394210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_199
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff60df8d1ebe8d46bf2e48ba4cfb732
+      internalID: 1118435340808951645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bg_cave_blueish_200
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971a56b90a6fc504b8724710179ba8de
+      internalID: -7410112326563931003
       vertices: []
       indices: 
       edges: []
@@ -274,7 +4954,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fff01b64a3ca9de4c9e827be7385a7e7
     internalID: 0
     vertices: []
     indices: 
