@@ -13254,7 +13254,6 @@ GameObject:
   - component: {fileID: 585689243}
   - component: {fileID: 585689248}
   - component: {fileID: 585689249}
-  - component: {fileID: 585689250}
   m_Layer: 9
   m_Name: Hero
   m_TagString: Untagged
@@ -13294,7 +13293,7 @@ MonoBehaviour:
   isAttackThree: 0
   attackCount: 0
   canMove: 0
-  walkSpeed: 6
+  walkSpeed: 8
   jumpSpeed: 8
   minJumpSpeed: 3
   maxFallSpeed: 5
@@ -13399,13 +13398,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585689241}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: e7b9d94bce30d8a4dbd6fed4cff69b32, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.19}
+  m_Offset: {x: 0.03, y: -0.19}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13416,7 +13415,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2, y: 1.83}
+  m_Size: {x: 0.7, y: 1.83}
   m_EdgeRadius: 0
 --- !u!114 &585689248
 MonoBehaviour:
@@ -13435,12 +13434,12 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  bottomOffset: {x: 0, y: -1.1}
+  bottomOffset: {x: 0.03, y: -1.1}
   rightOffset: {x: 0.61, y: -0.07}
   leftOffset: {x: -0.61, y: -0.07}
   collisionRadius: 0.58
   boxSizeWall: {x: 0.25, y: 1.51}
-  boxSizeGround: {x: 1.11, y: 0.18}
+  boxSizeGround: {x: 0.7, y: 0.18}
   slideColSize: {x: 1.57, y: 0.96}
   slideColOffset: {x: 0.1, y: -0.62}
   idleColSize: {x: 1.2, y: 1.83}
@@ -13463,24 +13462,8 @@ MonoBehaviour:
     m_Bits: 1024
   attackRange: 0.5
   attackDamage: 40
-  attackRate: 2
+  attackRate: 3
   attackCD: 0
---- !u!70 &585689250
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 585689241}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: e7b9d94bce30d8a4dbd6fed4cff69b32, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.19}
-  m_Size: {x: 1.2, y: 1.83}
-  m_Direction: 0
 --- !u!1 &776442517
 GameObject:
   m_ObjectHideFlags: 0

@@ -55,13 +55,13 @@ public class Collision : MonoBehaviour
         Gizmos.DrawWireCube(new Vector3(center.x + rightOffset.x, center.y + rightOffset.y, center.z), boxSizeWall);
         Gizmos.DrawWireCube(new Vector3(center.x + leftOffset.x, center.y + leftOffset.y, center.z), boxSizeWall);
 
-        // Idle Collision Debug
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube(idleColOffset, idleColSize);
+        //// Idle Collision Debug
+        //Gizmos.color = Color.blue;
+        //Gizmos.DrawWireCube(idleColOffset, idleColSize);
 
-        // Slide Collision Debug
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireCube(slideColOffset, slideColSize);
+        //// Slide Collision Debug
+        //Gizmos.color = Color.cyan;
+        //Gizmos.DrawWireCube(slideColOffset, slideColSize);
 
     }
 

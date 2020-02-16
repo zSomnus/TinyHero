@@ -62,10 +62,11 @@ public class Movement : MonoBehaviour
     void Update()
     {
         // Sliding
-        if (isSliding && collision.OnGround())
+        if (isSliding)
         {
             canMove = false;
             transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
+            rb.velocity = Vector2.zero;
         }
 
         // Move right
@@ -83,7 +84,7 @@ public class Movement : MonoBehaviour
         }
 
         // Input Slide
-        if (Input.GetButtonDown("Slide") && collision.OnGround())
+        if (Input.GetButtonDown("Slide"))
         {
             SlideStart();
         }
@@ -164,25 +165,28 @@ public class Movement : MonoBehaviour
         }
     }
 
-    IEnumerator SlideMove(float time)
-    {
-        if (isSliding)
-        {
-            canMove = false;
-            transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
-        }
-        yield return new WaitForSeconds(time);
-    }
+    //IEnumerator SlideMove(float time)
+    //{
+    //    if (isSliding)
+    //    {
+    //        canMove = false;
+    //        transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
+    //    }
+    //    yield return new WaitForSeconds(time);
+    //}
 
     void SlideStart()
     {
-        StartCoroutine(SlideMove(slideCd));
-        isSliding = true;
-        Debug.Log("SlideStart()");
-        animator.SetBool("Sliding", true);
-        collider.size = collision.slideColSize;
-        collider.offset = collision.slideColOffset;
-        rb.gravityScale = 0f;
+        //StartCoroutine(SlideMove(slideCd));
+        if (collision.OnGround())
+        {
+            isSliding = true;
+            Debug.Log("SlideStart()");
+            animator.SetBool("Sliding", true);
+            collider.size = collision.slideColSize;
+            collider.offset = collision.slideColOffset;
+            rb.gravityScale = 0f;
+        }
         //transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
     }
 
