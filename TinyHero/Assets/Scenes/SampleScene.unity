@@ -13435,8 +13435,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   bottomOffset: {x: 0.03, y: -1.1}
-  rightOffset: {x: 0.61, y: -0.07}
-  leftOffset: {x: -0.61, y: -0.07}
+  rightOffset: {x: 0.4, y: -0.17}
+  leftOffset: {x: -0.34, y: -0.17}
   collisionRadius: 0.58
   boxSizeWall: {x: 0.25, y: 1.51}
   boxSizeGround: {x: 0.7, y: 0.18}

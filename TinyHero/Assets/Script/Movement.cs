@@ -116,6 +116,8 @@ public class Movement : MonoBehaviour
             animator.SetBool("Falling", false);
         }
 
+        
+
         // Attack
         //if (Input.GetButtonDown("Fire1"))
         //{
@@ -132,6 +134,15 @@ public class Movement : MonoBehaviour
         //    attackCount = 0;
         //}
         SimulatePhysics();
+
+        if (collision.OnWall())
+        {
+            OnWallSlide();
+        }
+        else
+        {
+            animator.SetBool("OnWall", false);
+        }
     }
 
     void SimulatePhysics()
@@ -174,6 +185,11 @@ public class Movement : MonoBehaviour
     //    }
     //    yield return new WaitForSeconds(time);
     //}
+
+    void OnWallSlide()
+    {
+        animator.SetBool("OnWall", true);
+    }
 
     void SlideStart()
     {
