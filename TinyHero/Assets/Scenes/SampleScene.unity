@@ -13047,7 +13047,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -13288,6 +13288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a856436a20b81549a5509beb11da0c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inAir: 0
   isAttackOne: 0
   isAttackTwo: 0
   isAttackThree: 0
@@ -13302,6 +13303,7 @@ MonoBehaviour:
   slideCd: 1
   fallMultiplier: 5
   lowJumpMultiplier: 6
+  wallSlideSpeed: 2
 --- !u!50 &585689244
 Rigidbody2D:
   serializedVersion: 4
@@ -13434,16 +13436,16 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  bottomOffset: {x: 0.03, y: -1.1}
-  rightOffset: {x: 0.4, y: -0.17}
-  leftOffset: {x: -0.34, y: -0.17}
+  bottomOffset: {x: 0.03, y: -1.19}
+  rightOffset: {x: 0.5, y: -0.17}
+  leftOffset: {x: -0.44, y: -0.17}
   collisionRadius: 0.58
   boxSizeWall: {x: 0.25, y: 1.51}
-  boxSizeGround: {x: 0.7, y: 0.18}
+  boxSizeGround: {x: 0.6, y: 0.18}
   slideColSize: {x: 1.57, y: 0.96}
   slideColOffset: {x: 0.1, y: -0.62}
-  idleColSize: {x: 1.2, y: 1.83}
-  idleColOffset: {x: 0, y: -0.19}
+  idleColSize: {x: 0.7, y: 1.83}
+  idleColOffset: {x: 0.03, y: -0.19}
 --- !u!114 &585689249
 MonoBehaviour:
   m_ObjectHideFlags: 0

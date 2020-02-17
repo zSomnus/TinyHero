@@ -5,6 +5,9 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     Rigidbody2D rb;
+    [Space]
+    [Header("Player State")]
+    public bool inAir;
 
 
     [Space]
@@ -36,6 +39,9 @@ public class Movement : MonoBehaviour
     [SerializeField] float fallMultiplier;
     [SerializeField] float lowJumpMultiplier;
 
+    [Space]
+    [Header("Wall Slide")]
+    [SerializeField] float wallSlideSpeed;
 
     Collision collision;
     BoxCollider2D collider;
@@ -93,15 +99,17 @@ public class Movement : MonoBehaviour
         if (collision.OnGround())
         {
             animator.SetBool("Jumping", false);
+            animator.SetBool("InAir", false);
             Jump();
         }
         else
         {
             animator.SetBool("Jumping", true);
+            animator.SetBool("InAir", true);
         }
 
         // Jump & fall
-        if(rb.velocity.y > 0.5f)
+        if (rb.velocity.y > 0.5f)
         {
             animator.SetBool("Jumping", true);
         }
@@ -135,13 +143,14 @@ public class Movement : MonoBehaviour
         //}
         SimulatePhysics();
 
-        if (collision.OnWall())
+        if (collision.OnWall() && !collision.OnGround())
         {
             OnWallSlide();
         }
         else
         {
             animator.SetBool("OnWall", false);
+            canMove = true;
         }
     }
 
@@ -162,14 +171,18 @@ public class Movement : MonoBehaviour
 
     void Walk()
     {
-        float walkInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(walkInput * walkSpeed, rb.velocity.y);
+        if (canMove)
+        {
+            float walkInput = Input.GetAxis("Horizontal");
+            rb.velocity = new Vector2(walkInput * walkSpeed, rb.velocity.y);
+        }
     }
 
     void Jump()
     {
         if (Input.GetButtonDown("Jump"))
         {
+            //collision.OnWall(false);
             //Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             Debug.Log("Jump()");
@@ -189,6 +202,9 @@ public class Movement : MonoBehaviour
     void OnWallSlide()
     {
         animator.SetBool("OnWall", true);
+
+        rb.velocity = new Vector2(rb.velocity.x, -wallSlideSpeed);
+        canMove = false;
     }
 
     void SlideStart()

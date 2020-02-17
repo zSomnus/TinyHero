@@ -70,8 +70,18 @@ public class Collision : MonoBehaviour
         return onGround;
     }
 
+    //public void OnGround(bool value)
+    //{
+    //    onGround = value;
+    //}
+
     public bool OnWall()
     {
         return onWall;
     }
+
+    //public void OnWall(bool value)
+    //{
+    //    onWall = value;
+    //}
 }
