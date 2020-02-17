@@ -13304,6 +13304,7 @@ MonoBehaviour:
   fallMultiplier: 5
   lowJumpMultiplier: 6
   wallSlideSpeed: 2
+  wallJumpVector: {x: 10, y: 0}
 --- !u!50 &585689244
 Rigidbody2D:
   serializedVersion: 4

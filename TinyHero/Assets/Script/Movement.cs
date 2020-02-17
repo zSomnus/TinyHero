@@ -43,9 +43,14 @@ public class Movement : MonoBehaviour
     [Header("Wall Slide")]
     [SerializeField] float wallSlideSpeed;
 
+    [Space]
+    [Header("Wall Jump")]
+    [SerializeField] Vector2 wallJumpVector;
+
     Collision collision;
     BoxCollider2D collider;
     Animator animator;
+
 
 
     // Start is called before the first frame update
@@ -95,12 +100,14 @@ public class Movement : MonoBehaviour
             SlideStart();
         }
 
-        // Idle collision
+        // Jump
+
+        Jump();
+
         if (collision.OnGround())
         {
             animator.SetBool("Jumping", false);
             animator.SetBool("InAir", false);
-            Jump();
         }
         else
         {
@@ -182,10 +189,34 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            //collision.OnWall(false);
-            //Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
-            rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
-            Debug.Log("Jump()");
+            if (collision.OnGround())
+            {
+                animator.SetBool("Jumping", false);
+                animator.SetBool("InAir", false);
+                //collision.OnWall(false);
+                //Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
+                rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+                Debug.Log("Jump()");
+            }else if (collision.OnWall() && !collision.OnGround())
+            {
+                rb.velocity += new Vector2(-transform.localScale.x * wallJumpVector.x, wallJumpVector.y);
+                canMove = true;
+                Debug.Log("Wall Jump");
+            }
+        }
+    }
+
+    void Climb()
+    {
+        if (collision.OnWall())
+        {
+            if (Input.GetButtonDown("Vertical") && Input.GetAxisRaw("Vertical") > 0f)
+            {
+                
+            }else if (Input.GetButtonDown("Vertical") && Input.GetAxisRaw("Vertical") < 0f)
+            {
+
+            }
         }
     }
 
