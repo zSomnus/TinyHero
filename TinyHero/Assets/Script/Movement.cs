@@ -33,6 +33,8 @@ public class Movement : MonoBehaviour
     [SerializeField] float slideSpeed;
     [SerializeField] bool isSliding;
     [SerializeField] float slideCd;
+    float slideTimer;
+    bool startCounting;
 
     [Space]
     [Header("Multiplier")]
@@ -46,6 +48,9 @@ public class Movement : MonoBehaviour
     [Space]
     [Header("Wall Jump")]
     [SerializeField] Vector2 wallJumpVector;
+
+    [Header("Climb")]
+    [SerializeField] Vector3 climbVector;
 
     Collision collision;
     BoxCollider2D collider;
@@ -61,6 +66,8 @@ public class Movement : MonoBehaviour
         collision = GetComponent<Collision>();
         collider = GetComponent<BoxCollider2D>();
         canMove = true;
+        startCounting = false;
+        slideTimer = slideCd;
     }
 
     private void FixedUpdate()
@@ -93,10 +100,16 @@ public class Movement : MonoBehaviour
                 animator.SetBool("Moving", false);
             }
         }
+        if (startCounting)
+        {
+            slideTimer += Time.deltaTime;
+        }
 
         // Input Slide
-        if (Input.GetButtonDown("Slide"))
+        if ((Input.GetButtonDown("Slide") || Input.GetAxisRaw("Slide") > 0.1f) && slideTimer >= slideCd)
         {
+            startCounting = false;
+            //StartCoroutine("SlideMove");
             SlideStart();
         }
 
@@ -152,7 +165,8 @@ public class Movement : MonoBehaviour
 
         if (collision.OnWall() && !collision.OnGround())
         {
-            OnWallSlide();
+            Climb();
+            //OnWallSlide();
         }
         else
         {
@@ -199,7 +213,9 @@ public class Movement : MonoBehaviour
                 Debug.Log("Jump()");
             }else if (collision.OnWall() && !collision.OnGround())
             {
-                rb.velocity += new Vector2(-transform.localScale.x * wallJumpVector.x, wallJumpVector.y);
+                rb.velocity += new Vector2(-transform.localScale.x * wallJumpVector.x, 0f);
+                //rb.velocity += new Vector2(0f, wallJumpVector.y);
+                //rb.velocity += new Vector2(0f, )
                 canMove = true;
                 Debug.Log("Wall Jump");
             }
@@ -210,24 +226,55 @@ public class Movement : MonoBehaviour
     {
         if (collision.OnWall())
         {
-            if (Input.GetButtonDown("Vertical") && Input.GetAxisRaw("Vertical") > 0f)
+            if (Input.GetButtonDown("Slide") || Input.GetAxisRaw("Hold") > 0.1f)
             {
+                rb.gravityScale = 0f;
+                rb.velocity = new Vector2(0f, Input.GetAxis("Vertical"));
+                Debug.Log("Velocity y: " + rb.velocity.y);
+                //transform.position += new Vector3(0f, Input.GetAxis("Vertical") * 5f, 0f);
                 
-            }else if (Input.GetButtonDown("Vertical") && Input.GetAxisRaw("Vertical") < 0f)
-            {
+                Debug.Log("Hold");
+                if (Input.GetButtonDown("Vertical") && Input.GetAxis("Vertical") > 0f)
+                {
 
+                    transform.position += climbVector;
+                    rb.velocity += new Vector2(climbVector.x, climbVector.y);
+
+                    Debug.Log("Climb up");
+                
+                }else if (Input.GetButtonDown("Vertical") && Input.GetAxis("Vertical") < 0f)
+                {
+                    rb.gravityScale = 0;
+                    //transform.position -= climbVector;
+                    rb.velocity = new Vector2(0f, Input.GetAxis("Vertical"));
+
+                    Debug.Log("Climb down");
+                }
+            }
+            else
+            {
+                OnWallSlide();
+                rb.gravityScale = 1f;
+                Debug.Log("On wall slide");
             }
         }
     }
 
-    //IEnumerator SlideMove(float time)
+    //IEnumerator SlideMove()
     //{
-    //    if (isSliding)
-    //    {
-    //        canMove = false;
-    //        transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
-    //    }
-    //    yield return new WaitForSeconds(time);
+    //    Debug.Log("Slide used");
+
+    //    SlideStart();
+    //    yield return new WaitForSeconds(slideCd);
+
+    //    //canMove = true;
+    //    //isSliding = false;
+    //    //Debug.Log("SlideEnd()");
+    //    //animator.SetBool("Sliding", false);
+    //    //collider.size = collision.idleColSize;
+    //    //collider.offset = collision.idleColOffset;
+    //    //rb.gravityScale = 1f;
+
     //}
 
     void OnWallSlide()
@@ -250,6 +297,7 @@ public class Movement : MonoBehaviour
             collider.offset = collision.slideColOffset;
             rb.gravityScale = 0f;
         }
+
         //transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
     }
 
@@ -262,6 +310,9 @@ public class Movement : MonoBehaviour
         collider.size = collision.idleColSize;
         collider.offset = collision.idleColOffset;
         rb.gravityScale = 1f;
+        //StartCoroutine("SlideStart");
+        slideTimer = 0f;
+        startCounting = true;
     }
 
     //void Attack()

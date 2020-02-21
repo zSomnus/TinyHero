@@ -13300,11 +13300,12 @@ MonoBehaviour:
   maxFallSpeed: 5
   slideSpeed: 12
   isSliding: 0
-  slideCd: 1
+  slideCd: 0.2
   fallMultiplier: 5
   lowJumpMultiplier: 6
   wallSlideSpeed: 2
-  wallJumpVector: {x: 10, y: 0}
+  wallJumpVector: {x: 10, y: 10000}
+  climbVector: {x: 0, y: 100, z: 0}
 --- !u!50 &585689244
 Rigidbody2D:
   serializedVersion: 4
@@ -13438,10 +13439,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   bottomOffset: {x: 0.03, y: -1.19}
-  rightOffset: {x: 0.5, y: -0.17}
-  leftOffset: {x: -0.44, y: -0.17}
+  rightOffset: {x: 0.5, y: 0.4}
+  leftOffset: {x: -0.44, y: 0.4}
   collisionRadius: 0.58
-  boxSizeWall: {x: 0.25, y: 1.51}
+  boxSizeWall: {x: 0.25, y: 0.36}
   boxSizeGround: {x: 0.6, y: 0.18}
   slideColSize: {x: 1.57, y: 0.96}
   slideColOffset: {x: 0.1, y: -0.62}
@@ -13466,7 +13467,7 @@ MonoBehaviour:
   attackRange: 0.5
   attackDamage: 40
   attackRate: 3
-  attackCD: 0
+  attackCD: 5
 --- !u!1 &776442517
 GameObject:
   m_ObjectHideFlags: 0
