@@ -13305,7 +13305,7 @@ MonoBehaviour:
   lowJumpMultiplier: 6
   wallSlideSpeed: 2
   wallJumpVector: {x: 10, y: 10000}
-  climbVector: {x: 0, y: 100, z: 0}
+  climbVector: {x: 0, y: 5, z: 0}
 --- !u!50 &585689244
 Rigidbody2D:
   serializedVersion: 4

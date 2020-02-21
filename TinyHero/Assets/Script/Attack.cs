@@ -7,6 +7,8 @@ public class Attack : MonoBehaviour
 
     Animator animator;
 
+    bool canAttack;
+
     public Transform attackPoint;
     public LayerMask enemyLayers;
 
@@ -21,6 +23,9 @@ public class Attack : MonoBehaviour
     LayerMask playerLayerMask;
 
     [SerializeField] private float attackCD;
+
+    public bool CanAttack { get => canAttack; set => canAttack = value; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +58,7 @@ public class Attack : MonoBehaviour
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
         }
     }
+
 
     private void OnDrawGizmosSelected()
     {

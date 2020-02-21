@@ -226,30 +226,12 @@ public class Movement : MonoBehaviour
     {
         if (collision.OnWall())
         {
+            rb.gravityScale = 0f;
+
             if (Input.GetButtonDown("Slide") || Input.GetAxisRaw("Hold") > 0.1f)
             {
-                rb.gravityScale = 0f;
                 rb.velocity = new Vector2(0f, Input.GetAxis("Vertical"));
-                Debug.Log("Velocity y: " + rb.velocity.y);
                 //transform.position += new Vector3(0f, Input.GetAxis("Vertical") * 5f, 0f);
-                
-                Debug.Log("Hold");
-                if (Input.GetButtonDown("Vertical") && Input.GetAxis("Vertical") > 0f)
-                {
-
-                    transform.position += climbVector;
-                    rb.velocity += new Vector2(climbVector.x, climbVector.y);
-
-                    Debug.Log("Climb up");
-                
-                }else if (Input.GetButtonDown("Vertical") && Input.GetAxis("Vertical") < 0f)
-                {
-                    rb.gravityScale = 0;
-                    //transform.position -= climbVector;
-                    rb.velocity = new Vector2(0f, Input.GetAxis("Vertical"));
-
-                    Debug.Log("Climb down");
-                }
             }
             else
             {

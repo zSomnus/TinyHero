@@ -330,7 +330,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: z
+    positiveButton: left shift
     altNegativeButton: 
     altPositiveButton: joystick button 1
     gravity: 1000
@@ -338,6 +338,6 @@ InputManager:
     sensitivity: 1000
     snap: 0
     invert: 0
-    type: 2
+    type: 0
     axis: 9
     joyNum: 0
