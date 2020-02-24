@@ -13303,9 +13303,9 @@ MonoBehaviour:
   slideCd: 0.2
   fallMultiplier: 5
   lowJumpMultiplier: 6
-  wallSlideSpeed: 2
+  wallSlideSpeed: 1
   wallJumpVector: {x: 10, y: 10000}
-  climbVector: {x: 0, y: 5, z: 0}
+  climbVector: {x: 0, y: 3, z: 0}
 --- !u!50 &585689244
 Rigidbody2D:
   serializedVersion: 4
@@ -13439,10 +13439,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   bottomOffset: {x: 0.03, y: -1.19}
-  rightOffset: {x: 0.5, y: 0.4}
-  leftOffset: {x: -0.44, y: 0.4}
+  rightOffset: {x: 0.37, y: 0.6}
+  leftOffset: {x: -0.3, y: 0.6}
   collisionRadius: 0.58
-  boxSizeWall: {x: 0.25, y: 0.36}
+  boxSizeWall: {x: 0.25, y: 0.2}
   boxSizeGround: {x: 0.6, y: 0.18}
   slideColSize: {x: 1.57, y: 0.96}
   slideColOffset: {x: 0.1, y: -0.62}

@@ -6,6 +6,7 @@ public class Attack : MonoBehaviour
 {
 
     Animator animator;
+    Collision collision;
 
     bool canAttack;
 
@@ -47,15 +48,18 @@ public class Attack : MonoBehaviour
 
     void MeleeAttack()
     {
-        animator.SetTrigger("Attack");
-        //animator.SetBool("Attack1", true);
-        //canMove = false;
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
-        foreach(Collider2D enemy in hitEnemies)
+        if (collision.OnWall)
         {
-            //Debug.Log("We hit " + enemy.name);
-            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            animator.SetTrigger("Attack");
+            //animator.SetBool("Attack1", true);
+            //canMove = false;
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+            foreach(Collider2D enemy in hitEnemies)
+            {
+                //Debug.Log("We hit " + enemy.name);
+                enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            }
         }
     }
 

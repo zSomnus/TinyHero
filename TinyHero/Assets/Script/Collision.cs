@@ -23,6 +23,10 @@ public class Collision : MonoBehaviour
     public Vector2 idleColOffset;
 
     Animator animator;
+
+    public bool OnWall { get => onWall; set => onWall = value; }
+    public bool OnGround { get => onGround; set => onGround = value; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,24 +68,4 @@ public class Collision : MonoBehaviour
         //Gizmos.DrawWireCube(slideColOffset, slideColSize);
 
     }
-
-    public bool OnGround()
-    {
-        return onGround;
-    }
-
-    //public void OnGround(bool value)
-    //{
-    //    onGround = value;
-    //}
-
-    public bool OnWall()
-    {
-        return onWall;
-    }
-
-    //public void OnWall(bool value)
-    //{
-    //    onWall = value;
-    //}
 }

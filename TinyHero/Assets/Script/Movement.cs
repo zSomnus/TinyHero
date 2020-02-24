@@ -117,7 +117,7 @@ public class Movement : MonoBehaviour
 
         Jump();
 
-        if (collision.OnGround())
+        if (collision.OnGround)
         {
             animator.SetBool("Jumping", false);
             animator.SetBool("InAir", false);
@@ -163,16 +163,10 @@ public class Movement : MonoBehaviour
         //}
         SimulatePhysics();
 
-        if (collision.OnWall() && !collision.OnGround())
-        {
-            Climb();
-            //OnWallSlide();
-        }
-        else
-        {
-            animator.SetBool("OnWall", false);
-            canMove = true;
-        }
+        
+        Climb();
+
+        animator.SetFloat("VerticalVelocity", rb.velocity.y);
     }
 
     void SimulatePhysics()
@@ -203,7 +197,7 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            if (collision.OnGround())
+            if (collision.OnGround)
             {
                 animator.SetBool("Jumping", false);
                 animator.SetBool("InAir", false);
@@ -211,7 +205,7 @@ public class Movement : MonoBehaviour
                 //Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
                 rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
                 Debug.Log("Jump()");
-            }else if (collision.OnWall() && !collision.OnGround())
+            }else if (collision.OnWall && !collision.OnGround)
             {
                 rb.velocity += new Vector2(-transform.localScale.x * wallJumpVector.x, 0f);
                 //rb.velocity += new Vector2(0f, wallJumpVector.y);
@@ -224,21 +218,33 @@ public class Movement : MonoBehaviour
 
     void Climb()
     {
-        if (collision.OnWall())
+        if (collision.OnWall && !collision.OnGround)
         {
             rb.gravityScale = 0f;
 
-            if (Input.GetButtonDown("Slide") || Input.GetAxisRaw("Hold") > 0.1f)
+            if (Input.GetButtonDown("Hold") || Input.GetAxisRaw("Hold") > 0.1f)
             {
-                rb.velocity = new Vector2(0f, Input.GetAxis("Vertical"));
+                rb.velocity = new Vector2(0f, Input.GetAxis("Vertical") * climbVector.y);
+                animator.SetBool("Hold", true);
                 //transform.position += new Vector3(0f, Input.GetAxis("Vertical") * 5f, 0f);
             }
             else
             {
+                animator.SetBool("Hold", false);
                 OnWallSlide();
                 rb.gravityScale = 1f;
                 Debug.Log("On wall slide");
             }
+            if (Input.GetButtonUp("Slide"))
+            {
+                animator.SetBool("Hold", false);
+
+            }
+        }
+        else
+        {
+            animator.SetBool("OnWall", false);
+            canMove = true;
         }
     }
 
@@ -270,7 +276,7 @@ public class Movement : MonoBehaviour
     void SlideStart()
     {
         //StartCoroutine(SlideMove(slideCd));
-        if (collision.OnGround())
+        if (collision.OnGround)
         {
             isSliding = true;
             Debug.Log("SlideStart()");
