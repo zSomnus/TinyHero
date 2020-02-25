@@ -129,16 +129,16 @@ public class Movement : MonoBehaviour
         }
 
         // Jump & fall
-        if (rb.velocity.y > 0.5f)
+        if (rb.velocity.y > 0.5f && !collision.OnGround)
         {
             animator.SetBool("Jumping", true);
         }
-        else if(rb.velocity.y < -1f)
+        else if(rb.velocity.y < -0.5f && !collision.OnGround)
         {
             animator.SetBool("Jumping", false);
             animator.SetBool("Falling", true);
         }
-        else
+        else if(collision.OnGround)
         {
             animator.SetBool("Jumping", false);
             animator.SetBool("Falling", false);
@@ -213,6 +213,10 @@ public class Movement : MonoBehaviour
                 canMove = true;
                 Debug.Log("Wall Jump");
             }
+            else
+            {
+
+            }
         }
     }
 
@@ -243,7 +247,9 @@ public class Movement : MonoBehaviour
         }
         else
         {
+            rb.gravityScale = 1f;
             animator.SetBool("OnWall", false);
+            animator.SetBool("Hold", false);
             canMove = true;
         }
     }

@@ -48,7 +48,7 @@ public class Attack : MonoBehaviour
 
     void MeleeAttack()
     {
-        if (collision.OnWall)
+        if (!collision.OnWall)
         {
             animator.SetTrigger("Attack");
             //animator.SetBool("Attack1", true);
