@@ -31,6 +31,7 @@ public class Attack : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        collision = GetComponent<Collision>();
     }
 
     // Update is called once per frame
@@ -60,6 +61,10 @@ public class Attack : MonoBehaviour
                 //Debug.Log("We hit " + enemy.name);
                 enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
             }
+        }
+        else
+        {
+            Debug.Log("On wall attack");
         }
     }
 
