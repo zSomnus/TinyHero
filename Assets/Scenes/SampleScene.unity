@@ -13306,6 +13306,7 @@ MonoBehaviour:
   wallSlideSpeed: 1
   wallJumpVector: {x: 10, y: 10000}
   climbVector: {x: 0, y: 3, z: 0}
+  cornerClimbing: 0
 --- !u!50 &585689244
 Rigidbody2D:
   serializedVersion: 4
@@ -13435,12 +13436,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onGround: 0
   onWall: 0
+  onWallCorner: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
   bottomOffset: {x: 0.03, y: -1.19}
   rightOffset: {x: 0.37, y: 0.6}
   leftOffset: {x: -0.3, y: 0.6}
+  rightCornerOffset: {x: 0.37, y: -0.8}
+  leftCornerOffset: {x: -0.3, y: -0.8}
   collisionRadius: 0.58
   boxSizeWall: {x: 0.25, y: 0.2}
   boxSizeGround: {x: 0.6, y: 0.18}
@@ -13448,6 +13452,8 @@ MonoBehaviour:
   slideColOffset: {x: 0.1, y: -0.62}
   idleColSize: {x: 0.7, y: 1.83}
   idleColOffset: {x: 0.03, y: -0.19}
+  climbColSize: {x: 0.7, y: 1.83}
+  climbColOffset: {x: 0.03, y: -0.05}
 --- !u!114 &585689249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21520,7 +21526,7 @@ CompositeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
+  m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
