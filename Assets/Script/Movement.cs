@@ -74,6 +74,8 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Debug.Log(Input.GetAxisRaw("Hold"));
+
         FlipSprite();
         ClimbOnCorner();
 
