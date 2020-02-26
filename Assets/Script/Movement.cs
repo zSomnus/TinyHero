@@ -75,7 +75,17 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         FlipSprite();
-        
+        ClimbOnCorner();
+
+        if (cornerClimbing)
+        {
+            transform.position += new Vector3(0, 0.21f, 0);
+            if (collision.OnWallCorner == false)
+            {
+                transform.position += new Vector3(transform.localScale.x * 0.13f, 0, 0);
+            }
+
+        }
     }
 
     // Update is called once per frame
@@ -177,17 +187,7 @@ public class Movement : MonoBehaviour
 
         animator.SetFloat("VerticalVelocity", rb.velocity.y);
 
-        ClimbOnCorner();
-
-        if (cornerClimbing)
-        {
-            transform.position += new Vector3(0, 0.21f, 0);
-            if (collision.OnWallCorner == false)
-            {
-                transform.position += new Vector3(transform.localScale.x * 0.13f, 0, 0);
-            }
-
-        }
+        
     }
 
     void SimulatePhysics()
