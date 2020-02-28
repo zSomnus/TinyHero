@@ -265,9 +265,14 @@ public class Movement : MonoBehaviour
                     (transform.localScale.x == -1 && Input.GetAxis("Horizontal") < -0.2f))
                 {
                     animator.SetBool("Hold", false);
-                    OnWallSlide();
+                    //OnWallSlide();
                     rb.gravityScale = 1f;
                     Debug.Log("On wall slide");
+                    if(rb.velocity.y < 0f)
+                    {
+                        OnWallSlide();
+                    }
+                        
                 }
                 else
                 {
