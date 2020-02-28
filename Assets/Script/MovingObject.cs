@@ -2,19 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Slime : Enemy
+public class MovingObject : MonoBehaviour
 {
     // Start is called before the first frame update
-    protected override void Start()
+    void Start()
     {
-        animator = GetComponent<Animator>();
-        maxHp = 1;
-        base.Start();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        animator.SetInteger("HP", base.hp);
+        
     }
 }

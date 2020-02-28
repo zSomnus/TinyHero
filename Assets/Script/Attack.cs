@@ -14,7 +14,7 @@ public class Attack : MonoBehaviour
     public LayerMask enemyLayers;
 
     public float attackRange = 0.5f;
-    public int attackDamage = 40;
+    public int attackDamage = 1;
 
     public float attackRate = 2f;
     float nextAttackTime = 0f;
@@ -59,6 +59,7 @@ public class Attack : MonoBehaviour
             foreach(Collider2D enemy in hitEnemies)
             {
                 //Debug.Log("We hit " + enemy.name);
+                if(enemy != null)
                 enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
             }
         }

@@ -1,33 +1,26 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
-    public int maxHealth = 100;
-    int currentHealth;
+
+    protected Rigidbody2D rb;
+    [SerializeField] protected int damage;
+    protected int hp;
+    [SerializeField] protected int maxHp;
+    [SerializeField] protected float speed;
+    protected Animator animator;
+    [SerializeField] protected float deathDelay;
+
+
     // Start is called before the first frame update
     protected virtual void Start()
     {
-        currentHealth = maxHealth;
-    }
-
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-
-        if(currentHealth <= 0)
-        {
-            Die();
-        }
-    }
-
-    void Die()
-    {
-        Debug.Log("Enemy died!");
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
-        gameObject.SetActive(false);
+        rb = GetComponent<Rigidbody2D>();
+        hp = maxHp;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -36,4 +29,19 @@ public abstract class Enemy : MonoBehaviour
         
     }
 
+    internal virtual void TakeDamage(int damage)
+    {
+        hp -= damage;
+        if(hp == 0)
+        {
+            Die(deathDelay);
+        }
+    }
+
+    void Die(float delay)
+    {
+        animator.SetTrigger("Die");
+        Debug.Log("(X_X)");
+        Destroy(this.gameObject, delay);
+    }
 }
