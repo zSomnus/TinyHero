@@ -79,6 +79,14 @@ public class Movement : MonoBehaviour
         FlipSprite();
         ClimbOnCorner();
 
+        // Input Slide
+        if ((Input.GetButtonDown("Slide") || Input.GetAxisRaw("Slide") > 0.1f) && slideTimer >= slideCd)
+        {
+            startCounting = false;
+            //StartCoroutine("SlideMove");
+            SlideStart();
+        }
+
         if (cornerClimbing)
         {
             transform.position += new Vector3(0, 0.21f, 0);
@@ -119,13 +127,13 @@ public class Movement : MonoBehaviour
             slideTimer += Time.deltaTime;
         }
 
-        // Input Slide
-        if ((Input.GetButtonDown("Slide") || Input.GetAxisRaw("Slide") > 0.1f) && slideTimer >= slideCd)
-        {
-            startCounting = false;
-            //StartCoroutine("SlideMove");
-            SlideStart();
-        }
+        //// Input Slide
+        //if ((Input.GetButtonDown("Slide") || Input.GetAxisRaw("Slide") > 0.1f) && slideTimer >= slideCd)
+        //{
+        //    startCounting = false;
+        //    //StartCoroutine("SlideMove");
+        //    SlideStart();
+        //}
 
         // Jump
 
@@ -226,6 +234,8 @@ public class Movement : MonoBehaviour
                 //collision.OnWall(false);
                 //Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
                 rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+                collider.size = new Vector2(0.82f, 1.4f);
+                collider.offset = new Vector2(0.21f, 0.13f);
                 Debug.Log("Jump()");
             }else if (collision.OnWall && !collision.OnGround)
             {
@@ -303,7 +313,7 @@ public class Movement : MonoBehaviour
         {
             if (collision.OnGround == false && collision.OnWall == false && collision.OnWallCorner == true)
             {
-                collider.size = new Vector2(collision.climbColSize.x, 0.88f);
+                collider.size = new Vector2(collision.climbColSize.x, 0.8f);
                 collider.offset = new Vector2(collision.climbColOffset.x, 0.25f);
                 animator.SetBool("CornerClimb", true);
                 //transform.position += new Vector3(transform.localScale.x * 0.5f, 1f, 0);
