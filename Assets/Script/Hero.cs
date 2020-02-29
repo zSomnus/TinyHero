@@ -8,9 +8,9 @@ public class Hero : MonoBehaviour
     [SerializeField] Image hearts;
     [SerializeField] Sprite[] hitPointSprites;
 
-    [SerializeField] int hitPoint;
+    [SerializeField] int hp;
     int mana;
-    [SerializeField] int maxHitPoint;
+    [SerializeField] int maxHp;
     [SerializeField] int maxMana;
 
     [SerializeField] int meleeDamage;
@@ -18,12 +18,12 @@ public class Hero : MonoBehaviour
 
     [SerializeField] float stamina;
 
-    public int HitPoint { get => hitPoint; set => hitPoint = value; }
+    public int HitPoint { get => hp; set => hp = value; }
 
     // Start is called before the first frame update
     void Start()
     {
-        hitPoint = maxHitPoint;
+        hp = maxHp;
         //hitPointSprites = new Sprite[6];
         hearts = GameObject.Find("Hearts").GetComponent<Image>();
     }
@@ -31,7 +31,7 @@ public class Hero : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        switch (hitPoint)
+        switch (hp)
         {
             case 0:
                 hearts.sprite = hitPointSprites[0];
@@ -60,5 +60,10 @@ public class Hero : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        hp -= damage;
     }
 }

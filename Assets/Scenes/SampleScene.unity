@@ -12876,7 +12876,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420030}
   - component: {fileID: 519420033}
   m_Layer: 11
   m_Name: Main Camera
@@ -12893,22 +12892,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
---- !u!114 &519420030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24b7aee43292d324d8bccc38cb5e7420, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxSize: {x: 3, y: 3}
-  cameraMove: 0
-  verticalDis: 0
-  horizontalDis: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -13280,8 +13263,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 18192d27086ab3a46938ca4e8a913126, type: 3}
   - {fileID: 21300000, guid: 0e3f6fdd2184f344faa24ec43a9f858a, type: 3}
   - {fileID: 21300000, guid: 3811f6464d59462488823cf4a0052fa2, type: 3}
-  hitPoint: 0
-  maxHitPoint: 5
+  hp: 0
+  maxHp: 5
   maxMana: 0
   meleeDamage: 0
   rangeDamage: 0
@@ -20582,10 +20565,16 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 512
-  movingRange: {x: 13.44, y: 5.52}
-  rangeOffset: {x: 0, y: 0}
-  damage: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  movingRange: {x: 13.44, y: 8}
+  rangeOffset: {x: 0, y: 3.18}
+  hitWallRange: {x: 2.59, y: 0.5}
+  attackRange: {x: 1.96, y: 1.5}
+  attackOffset: {x: 0, y: 0}
   maxHp: 0
+  damage: 1
   speed: 2
   deathDelay: 2
 --- !u!1 &1254103497

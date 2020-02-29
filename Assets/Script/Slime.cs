@@ -20,13 +20,21 @@ public class Slime : Enemy
     {
         animator.SetInteger("HP", base.hp);
         FlipSprite();
-        playerInRange = Physics2D.OverlapBox((Vector2)transform.position + rangeOffset, movingRange, 0f, playerLayer);
+        playerInMoveRange = Physics2D.OverlapBox((Vector2)transform.position + rangeOffset, movingRange, 0f, playerLayer);
+        hitWall = Physics2D.OverlapBox((Vector2)transform.position, hitWallRange, 0f, groundLayer);
+        playerInAttackRange = Physics2D.OverlapBox((Vector2)transform.position + attackOffset, attackRange, 0f, playerLayer);
         CatchPlayer();
+
+        if (playerInAttackRange)
+        {
+            MeleeAttack();
+        }
     }
+
 
     void CatchPlayer()
     {
-        if (playerInRange)
+        if (playerInMoveRange && hp > 0 && !playerInAttackRange && !isAttacking)
         {
             Debug.Log("Moving");
             if (hero.transform.position.x - transform.position.x > collider.size.x / 2f)    //transform.position.x + this.collider.size.x / 2f
@@ -47,6 +55,38 @@ public class Slime : Enemy
                 animator.SetBool("Move", false);
                 rb.velocity = Vector2.zero;
             }
+        }
+        else
+        {
+            Debug.Log("Slime Stoped");
+            animator.SetBool("Move", false);
+            rb.velocity = Vector2.zero;
+        }
+
+        if (hitWall)
+        {
+            animator.SetBool("Move", false);
+        }
+    }
+
+    protected override void ApplyDamage()
+    {
+        if (playerInAttackRange)
+        {
+            base.ApplyDamage();
+
+        }
+    }
+
+    public void CheckAttack(int n)
+    {
+        if (n == 1)
+        {
+            isAttacking = true;
+        }
+        else
+        {
+            isAttacking = false;
         }
     }
 }

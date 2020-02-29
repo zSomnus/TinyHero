@@ -70,6 +70,7 @@ public class Attack : MonoBehaviour
     }
 
 
+
     private void OnDrawGizmosSelected()
     {
         if(attackPoint == null)
