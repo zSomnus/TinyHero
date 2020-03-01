@@ -16,58 +16,58 @@ public class Slime : Enemy
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
         animator.SetInteger("HP", base.hp);
-        FlipSprite();
-        playerInMoveRange = Physics2D.OverlapBox((Vector2)transform.position + rangeOffset, movingRange, 0f, playerLayer);
-        hitWall = Physics2D.OverlapBox((Vector2)transform.position, hitWallRange, 0f, groundLayer);
-        playerInAttackRange = Physics2D.OverlapBox((Vector2)transform.position + attackOffset, attackRange, 0f, playerLayer);
-        CatchPlayer();
+        //FlipSprite();
+        //playerInMoveRange = Physics2D.OverlapBox((Vector2)transform.position + rangeOffset, movingRange, 0f, playerLayer);
+        //hitWall = Physics2D.OverlapBox((Vector2)transform.position, hitWallRange, 0f, groundLayer);
+        //playerInAttackRange = Physics2D.OverlapBox((Vector2)transform.position + attackOffset, attackRange, 0f, playerLayer);
 
-        if (playerInAttackRange)
-        {
-            MeleeAttack();
-        }
+        //if (playerInAttackRange)
+        //{
+        //    MeleeAttack();
+        //}
+        base.Update();
     }
 
 
-    void CatchPlayer()
-    {
-        if (playerInMoveRange && hp > 0 && !playerInAttackRange && !isAttacking)
-        {
-            Debug.Log("Moving");
-            if (hero.transform.position.x - transform.position.x > collider.size.x / 2f)    //transform.position.x + this.collider.size.x / 2f
-            {
-                Debug.Log("Slime Move Right");
-                animator.SetBool("Move", true);
-                rb.velocity = new Vector2(speed, rb.velocity.y);
-            }
-            else if (hero.transform.position.x - transform.position.x < -collider.size.x / 2f)
-            {
-                Debug.Log("Slime Move Left");
-                animator.SetBool("Move", true);
-                rb.velocity = new Vector2(-speed, rb.velocity.y);
-            }
-            else
-            {
-                Debug.Log("Slime Stoped");
-                animator.SetBool("Move", false);
-                rb.velocity = Vector2.zero;
-            }
-        }
-        else
-        {
-            Debug.Log("Slime Stoped");
-            animator.SetBool("Move", false);
-            rb.velocity = Vector2.zero;
-        }
+    //void CatchPlayer()
+    //{
+    //    if (playerInMoveRange && hp > 0 && !playerInAttackRange && !isAttacking)
+    //    {
+    //        Debug.Log("Moving");
+    //        if (hero.transform.position.x - transform.position.x > collider.size.x / 2f)    //transform.position.x + this.collider.size.x / 2f
+    //        {
+    //            Debug.Log("Slime Move Right");
+    //            animator.SetBool("Move", true);
+    //            rb.velocity = new Vector2(speed, rb.velocity.y);
+    //        }
+    //        else if (hero.transform.position.x - transform.position.x < -collider.size.x / 2f)
+    //        {
+    //            Debug.Log("Slime Move Left");
+    //            animator.SetBool("Move", true);
+    //            rb.velocity = new Vector2(-speed, rb.velocity.y);
+    //        }
+    //        else
+    //        {
+    //            Debug.Log("Slime Stoped");
+    //            animator.SetBool("Move", false);
+    //            rb.velocity = Vector2.zero;
+    //        }
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("Slime Stoped");
+    //        animator.SetBool("Move", false);
+    //        rb.velocity = Vector2.zero;
+    //    }
 
-        if (hitWall)
-        {
-            animator.SetBool("Move", false);
-        }
-    }
+    //    if (hitWall)
+    //    {
+    //        animator.SetBool("Move", false);
+    //    }
+    //}
 
     protected override void ApplyDamage()
     {
@@ -75,18 +75,6 @@ public class Slime : Enemy
         {
             base.ApplyDamage();
 
-        }
-    }
-
-    public void CheckAttack(int n)
-    {
-        if (n == 1)
-        {
-            isAttacking = true;
-        }
-        else
-        {
-            isAttacking = false;
         }
     }
 }

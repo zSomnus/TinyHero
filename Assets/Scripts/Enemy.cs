@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    protected BoxCollider2D collider;
+
     protected bool playerInMoveRange;
     protected bool playerInAttackRange;
     protected bool onGround;
@@ -46,6 +48,21 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         spawnPoint = rb.transform.position;
         hero = GameObject.Find("Hero");
+        collider = GetComponent<BoxCollider2D>();
+    }
+
+    protected virtual void Update()
+    {
+        FlipSprite();
+        playerInMoveRange = Physics2D.OverlapBox((Vector2)transform.position + rangeOffset, movingRange, 0f, playerLayer);
+        hitWall = Physics2D.OverlapBox((Vector2)transform.position, hitWallRange, 0f, groundLayer);
+        playerInAttackRange = Physics2D.OverlapBox((Vector2)transform.position + attackOffset, attackRange, 0f, playerLayer);
+
+        if (playerInAttackRange)
+        {
+            MeleeAttack();
+        }
+        CatchPlayer();
     }
 
 
@@ -82,6 +99,68 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log("T_T");
         hero.GetComponent<Hero>().TakeDamage(damage);
+    }
+
+    protected void CatchPlayer()
+    {
+        if (playerInMoveRange && hp > 0 && !playerInAttackRange)
+        {
+            if (isAttacking)
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
+            }
+            else
+            {
+                Debug.Log("Moving");
+                if (hero.transform.position.x - transform.position.x > collider.size.x / 2f)    //transform.position.x + this.collider.size.x / 2f
+                {
+                    Debug.Log("Slime Move Right");
+                    animator.SetBool("Move", true);
+                    rb.velocity = new Vector2(speed, rb.velocity.y);
+                }
+                else if (hero.transform.position.x - transform.position.x < -collider.size.x / 2f)
+                {
+                    Debug.Log("Slime Move Left");
+                    animator.SetBool("Move", true);
+                    rb.velocity = new Vector2(-speed, rb.velocity.y);
+                }
+                else
+                {
+                    Debug.Log("Slime Stoped");
+                    animator.SetBool("Move", false);
+                    rb.velocity = new Vector2(0, rb.velocity.y);
+                }
+
+            }
+        }
+        else
+        {
+            Debug.Log("Slime Stoped");
+            animator.SetBool("Move", false);
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
+
+        if (hitWall)
+        {
+            animator.SetBool("Move", false);
+        }
+    }
+
+    protected void CheckAttack(int n)
+    {
+        if (n == 1)
+        {
+            isAttacking = true;
+        }
+        else
+        {
+            isAttacking = false;
+        }
+    }
+
+    protected void AttackEnd()
+    {
+        isAttacking = false;
     }
 
     protected void OnDrawGizmos()
