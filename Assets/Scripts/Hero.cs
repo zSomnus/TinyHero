@@ -66,4 +66,9 @@ public class Hero : MonoBehaviour
     {
         hp -= damage;
     }
+
+    public void Healing(int heal) 
+    {
+        hp += heal;
+    }
 }

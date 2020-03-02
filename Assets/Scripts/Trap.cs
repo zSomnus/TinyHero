@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Potion : MonoBehaviour
+public class Trap : MonoBehaviour
 {
-    public int healAmount = 1;
+    public int damage = 1;
     protected GameObject hero;
-
 
     void Start()
     {
@@ -22,7 +21,7 @@ public class Potion : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            hero.GetComponent<Hero>().Healing(healAmount);
+            hero.GetComponent<Hero>().TakeDamage(damage);
             Destroy(gameObject);
         }
     }
