@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class Potion : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int healAmount = 1;
+    protected GameObject hero;
+
+
     void Start()
+    {
+        hero = GameObject.Find("Hero");
+    }
+
+    void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnCollisionEnter2D(Collision2D col)
     {
-        
+        if (col.gameObject.tag == "Player")
+        {
+            hero.GetComponent<Hero>().Healing(healAmount);
+            Destroy(gameObject);
+        }
     }
 }
