@@ -10,10 +10,14 @@ public class Patrol : MonoBehaviour
     public float range;
     public float chaseSpeed;
     Rigidbody2D rb2d;
+    protected Animator animator;
+    protected GameObject hero;
 
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        hero = GameObject.Find("Hero");
     }
 
     void Update()
@@ -22,6 +26,7 @@ public class Patrol : MonoBehaviour
         if (distToPlayer < range)
         {
             Chase();
+            
         }
         else
         {
@@ -31,10 +36,10 @@ public class Patrol : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D colInfo)
     {
-        Hero hero = colInfo.collider.GetComponent<Hero>();
-        if (hero != null) 
+        if (colInfo.gameObject.tag == "Player") 
         {
-            hero.TakeDamage(damage);
+            animator.SetTrigger("Attack");
+            hero.GetComponent<Hero>().TakeDamage(damage);
             Debug.Log("Damage Taken");
         }
     }
@@ -42,7 +47,6 @@ public class Patrol : MonoBehaviour
     void TakeDamage() 
     {
         health--;
-
     }
 
     void Chase() 
