@@ -34,9 +34,9 @@ public class Patrol : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D colInfo)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        if (colInfo.gameObject.tag == "Player") 
+        if (col.gameObject.tag == "Player") 
         {
             animator.SetTrigger("Attack");
             hero.GetComponent<Hero>().TakeDamage(damage);
@@ -61,7 +61,6 @@ public class Patrol : MonoBehaviour
             rb2d.velocity = new Vector2(-chaseSpeed, 0);
             transform.localScale = new Vector2(1, 1);
         }
-
     }
 
     void StopChase()
