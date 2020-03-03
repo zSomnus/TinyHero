@@ -22,7 +22,6 @@ public class Trap : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             hero.GetComponent<Hero>().TakeDamage(damage);
-            Destroy(gameObject);
         }
     }
 }

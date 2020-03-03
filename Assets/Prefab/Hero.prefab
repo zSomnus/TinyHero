@@ -202,10 +202,12 @@ MonoBehaviour:
   isAttackThree: 0
   attackCount: 0
   canMove: 0
+  isMoving: 0
   walkSpeed: 8
   jumpSpeed: 8
   minJumpSpeed: 3
-  maxFallSpeed: 5
+  maxFallSpeed: 10
+  canDoubleJump: 0
   slideSpeed: 12
   isSliding: 0
   slideCd: 0.2
@@ -213,7 +215,8 @@ MonoBehaviour:
   lowJumpMultiplier: 6
   wallSlideSpeed: 1
   wallJumpVector: {x: 10, y: 10000}
-  climbVector: {x: 0, y: 3, z: 0}
+  climbVector: {x: 0, y: 5, z: 0}
+  cornerForce: {x: 0.3, y: 0.3}
   cornerClimbing: 0
 --- !u!114 &6591962057954441572
 MonoBehaviour:

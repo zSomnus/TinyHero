@@ -96,7 +96,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -104,7 +104,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &8752192891382659298
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -171,7 +171,7 @@ MonoBehaviour:
   movingRange: {x: 13.44, y: 8}
   rangeOffset: {x: 0, y: 3.18}
   hitWallRange: {x: 2.59, y: 0.5}
-  attackRange: {x: 1.96, y: 1.5}
+  attackRange: {x: 2.78, y: 1.5}
   attackOffset: {x: 0, y: 0}
   maxHp: 0
   damage: 1
