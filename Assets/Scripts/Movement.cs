@@ -30,6 +30,10 @@ public class Movement : MonoBehaviour
     [SerializeField] float maxFallSpeed;
 
     [Space]
+    [Header("Double Jump")]
+    [SerializeField] bool canDoubleJump;
+
+    [Space]
     [Header("Slide")]
     [SerializeField] float slideSpeed;
     [SerializeField] bool isSliding;
@@ -52,6 +56,7 @@ public class Movement : MonoBehaviour
 
     [Header("Climb")]
     [SerializeField] Vector3 climbVector;
+    [SerializeField] Vector2 cornerForce;
 
     Collision collision;
     BoxCollider2D collider;
@@ -91,10 +96,10 @@ public class Movement : MonoBehaviour
 
         if (cornerClimbing)
         {
-            transform.position += new Vector3(0, 0.21f, 0);
+            transform.position += new Vector3(0, cornerForce.y, 0);
             if (collision.OnWallCorner == false)
             {
-                transform.position += new Vector3(transform.localScale.x * 0.13f, 0, 0);
+                transform.position += new Vector3(transform.localScale.x * cornerForce.x, 0, 0);
             }
 
         }
@@ -115,7 +120,7 @@ public class Movement : MonoBehaviour
         if (canMove)
         {
             Walk();
-            if(Input.GetAxis("Horizontal") != 0f)
+            if (Input.GetAxis("Horizontal") != 0f)
             {
                 animator.SetBool("Moving", true);
                 isMoving = true;
@@ -142,10 +147,12 @@ public class Movement : MonoBehaviour
         // Jump
 
         Jump();
+        DoubleJump();
 
         if (collision.OnGround)
         {
             animator.SetBool("InAir", false);
+            canDoubleJump = true;
         }
         else
         {
@@ -166,7 +173,7 @@ public class Movement : MonoBehaviour
         {
             animator.SetBool("Jumping", true);
         }
-        else if(rb.velocity.y < -0.5f && !collision.OnGround)
+        else if (rb.velocity.y < -0.5f && !collision.OnGround)
         {
             animator.SetBool("Jumping", false);
             animator.SetBool("Falling", true);
@@ -177,6 +184,10 @@ public class Movement : MonoBehaviour
             animator.SetBool("Falling", false);
         }
 
+        if (collision.OnWall)
+        {
+            canDoubleJump = true;
+        }
         
 
         // Attack
@@ -196,12 +207,12 @@ public class Movement : MonoBehaviour
         //}
         SimulatePhysics();
 
-        
+
         Climb();
 
         animator.SetFloat("VerticalVelocity", rb.velocity.y);
 
-        
+
     }
 
     void SimulatePhysics()
@@ -241,9 +252,10 @@ public class Movement : MonoBehaviour
                 collider.size = new Vector2(0.82f, 1.4f);
                 collider.offset = new Vector2(0.21f, 0.13f);
                 Debug.Log("Jump()");
-            }else if (collision.OnWall && !collision.OnGround)
+            }
+            else if (collision.OnWall && !collision.OnGround)
             {
-                rb.velocity += new Vector2(-transform.localScale.x * wallJumpVector.x, 0f);
+                rb.velocity += new Vector2(-transform.localScale.x * wallJumpVector.x, wallJumpVector.y);
                 //rb.velocity += new Vector2(0f, wallJumpVector.y);
                 //rb.velocity += new Vector2(0f, )
                 canMove = true;
@@ -253,6 +265,16 @@ public class Movement : MonoBehaviour
             {
 
             }
+        }
+    }
+
+    void DoubleJump()
+    {
+        if (Input.GetButtonDown("Jump") && !collision.OnGround && !collision.OnWall && canDoubleJump)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+            canDoubleJump = false;
+            animator.SetTrigger("DoubleJump");
         }
     }
 
@@ -275,18 +297,18 @@ public class Movement : MonoBehaviour
                 animator.SetBool("Hold", false);
                 canMove = true;
                 rb.gravityScale = 1f;
-                if((transform.localScale.x == 1 && Input.GetAxis("Horizontal") > 0.2f) || 
+                if ((transform.localScale.x == 1 && Input.GetAxis("Horizontal") > 0.2f) ||
                     (transform.localScale.x == -1 && Input.GetAxis("Horizontal") < -0.2f))
                 {
                     animator.SetBool("Hold", false);
                     //OnWallSlide();
                     rb.gravityScale = 1f;
                     Debug.Log("On wall slide");
-                    if(rb.velocity.y < 0f)
+                    if (rb.velocity.y < 0f)
                     {
                         OnWallSlide();
                     }
-                        
+
                 }
                 else
                 {
@@ -415,7 +437,7 @@ public class Movement : MonoBehaviour
     void AttackOneStart()
     {
         isAttackOne = true;
-        
+
     }
 
     void AttackOneEnd()
