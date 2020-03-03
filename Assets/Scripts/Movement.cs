@@ -20,6 +20,7 @@ public class Movement : MonoBehaviour
     [Space]
     [Header("Walk")]
     [SerializeField] bool canMove;
+    [SerializeField] bool isMoving;
     [SerializeField] float walkSpeed;
 
     [Space]
@@ -70,6 +71,7 @@ public class Movement : MonoBehaviour
         canMove = true;
         startCounting = false;
         slideTimer = slideCd;
+        isMoving = false;
     }
 
     private void FixedUpdate()
@@ -116,10 +118,12 @@ public class Movement : MonoBehaviour
             if(Input.GetAxis("Horizontal") != 0f)
             {
                 animator.SetBool("Moving", true);
+                isMoving = true;
             }
             else
             {
                 animator.SetBool("Moving", false);
+                isMoving = false;
             }
         }
         if (startCounting)
@@ -434,7 +438,7 @@ public class Movement : MonoBehaviour
     void FlipSprite()
     {
         bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon + 0.5f;
-        if (playerHasHorizontalSpeed)
+        if (playerHasHorizontalSpeed && isMoving)
         {
             transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }

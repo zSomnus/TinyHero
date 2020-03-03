@@ -158,11 +158,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    protected void AttackEnd()
-    {
-        isAttacking = false;
-    }
-
     protected void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
