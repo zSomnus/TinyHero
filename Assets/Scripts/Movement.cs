@@ -95,16 +95,7 @@ public class Movement : MonoBehaviour
             SlideStart();
         }
 
-        if (cornerClimbing)
-        {
-            rb.velocity = Vector2.zero;
-            transform.position += new Vector3(0, cornerForce.y, 0);
-            if (collision.OnWallCorner == false)
-            {
-                transform.position += new Vector3(transform.localScale.x * cornerForce.x, 0, 0);
-            }
-
-        }
+        
 
         if (Input.GetButtonDown("Hold") || Input.GetAxisRaw("Hold") > 0.1f)
         {
@@ -362,6 +353,17 @@ public class Movement : MonoBehaviour
         {
             //cornerClimbing = false;
             animator.SetBool("CornerClimb", false);
+        }
+
+        if (cornerClimbing)
+        {
+            rb.velocity = Vector2.zero;
+            transform.position += new Vector3(0, cornerForce.y, 0);
+            if (collision.OnWallCorner == false)
+            {
+                transform.position += new Vector3(transform.localScale.x * cornerForce.x, 0, 0);
+            }
+
         }
     }
 

@@ -171,7 +171,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.21, y: 0.13}
+  m_Offset: {x: 0, y: -0.19}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -182,7 +182,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.82, y: 1.4}
+  m_Size: {x: 0.7, y: 1.83}
   m_EdgeRadius: 0
 --- !u!114 &6591962057954441567
 MonoBehaviour:
@@ -238,9 +238,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   bottomOffset: {x: 0.03, y: -1.19}
-  rightOffset: {x: 0.37, y: 0.6}
+  rightOffset: {x: 0.3, y: 0.6}
   leftOffset: {x: -0.3, y: 0.6}
-  rightCornerOffset: {x: 0.37, y: -0.3}
+  rightCornerOffset: {x: 0.3, y: -0.3}
   leftCornerOffset: {x: -0.3, y: -0.3}
   collisionRadius: 0.58
   boxSizeWall: {x: 0.25, y: 0.2}
@@ -248,7 +248,7 @@ MonoBehaviour:
   slideColSize: {x: 1.57, y: 0.96}
   slideColOffset: {x: 0.1, y: -0.62}
   idleColSize: {x: 0.7, y: 1.83}
-  idleColOffset: {x: 0.03, y: -0.19}
+  idleColOffset: {x: 0, y: -0.19}
   climbColSize: {x: 0.7, y: 1.83}
   climbColOffset: {x: 0.03, y: -0.05}
 --- !u!114 &6591962057954441573
