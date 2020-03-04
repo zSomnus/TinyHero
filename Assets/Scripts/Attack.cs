@@ -6,7 +6,7 @@ public class Attack : MonoBehaviour
 {
 
     Animator animator;
-    Collision collision;
+    HeroCollision heroCollision;
 
     bool canAttack;
 
@@ -31,7 +31,7 @@ public class Attack : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        collision = GetComponent<Collision>();
+        heroCollision = GetComponent<HeroCollision>();
     }
 
     // Update is called once per frame
@@ -49,7 +49,7 @@ public class Attack : MonoBehaviour
 
     void MeleeAttack()
     {
-        if (!collision.OnWall)
+        if (!heroCollision.OnWall)
         {
             animator.SetTrigger("Attack");
             //animator.SetBool("Attack1", true);

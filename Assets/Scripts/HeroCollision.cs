@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collision : MonoBehaviour
+public class HeroCollision : MonoBehaviour
 {
+    BoxCollider2D collider;
+
     [SerializeField] bool onGround;
     [SerializeField] bool onWall;
     [SerializeField] bool onWallCorner;
 
     [Header("Layers")]
     [SerializeField] LayerMask groundLayer;
+    [SerializeField] LayerMask spikeLayer;
 
     [Space]
     [SerializeField] Vector2 bottomOffset, rightOffset, leftOffset, rightCornerOffset, leftCornerOffset;
@@ -26,16 +29,23 @@ public class Collision : MonoBehaviour
     public Vector2 climbColSize;
     public Vector2 climbColOffset;
 
+    [Space]
+    Hero hero;
+    [SerializeField] bool onSpike;
+
     Animator animator;
 
     public bool OnWall { get => onWall; set => onWall = value; }
     public bool OnGround { get => onGround; set => onGround = value; }
     public bool OnWallCorner { get => onWallCorner; set => onWallCorner = value; }
+    public bool OnSpike { get => onSpike; set => onSpike = value; }
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        collider = GetComponent<BoxCollider2D>();
+        hero = GetComponent<Hero>();
     }
 
     // Update is called once per frame
@@ -50,7 +60,36 @@ public class Collision : MonoBehaviour
 
         onWallCorner = Physics2D.OverlapBox((Vector2)transform.position + rightCornerOffset, boxSizeWall, 0f, groundLayer)
             || Physics2D.OverlapBox((Vector2)transform.position + leftCornerOffset, boxSizeWall, 0f, groundLayer);
+
+        
     }
+
+    private void FixedUpdate()
+    {
+        if (collider.IsTouchingLayers(spikeLayer))
+        {
+            onSpike = true;
+        }
+        else
+        {
+            onSpike = false;
+        }
+    }
+
+    //void HitSpike()
+    //{
+    //    if (collider.IsTouchingLayers(spikeLayer))
+    //    {
+    //        Debug.Log("Ah!");
+    //        OnSpike = true;
+    //        hero.TakeDamage();
+    //    }
+    //}
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    GetComponent<Hero>().TakeDamage collision.gameObject.GetComponent<ReviveAtLocation>().SpikeDamage;
+    //}
 
     private void OnDrawGizmos()
     {

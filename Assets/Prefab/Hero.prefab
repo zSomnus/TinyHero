@@ -237,6 +237,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  spikeLayer:
+    serializedVersion: 2
+    m_Bits: 0
   bottomOffset: {x: 0.03, y: -1.19}
   rightOffset: {x: 0.3, y: 0.6}
   leftOffset: {x: -0.3, y: 0.6}
@@ -283,6 +286,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca50b8104c96c1e4da51581d727e0802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spikeLayer:
+    serializedVersion: 2
+    m_Bits: 8192
   hearts: {fileID: 0}
   hitPointSprites:
   - {fileID: 21300000, guid: 3434b5da8732fb34886da3a7b1e2e4b9, type: 3}
@@ -297,3 +303,4 @@ MonoBehaviour:
   meleeDamage: 0
   rangeDamage: 0
   stamina: 0
+  onSpike: 0

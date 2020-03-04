@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class Hero : MonoBehaviour
 {
+    BoxCollider2D collider;
+    [SerializeField] LayerMask spikeLayer;
+
     [SerializeField] Image hearts;
     [SerializeField] Sprite[] hitPointSprites;
 
@@ -18,6 +21,7 @@ public class Hero : MonoBehaviour
 
     [SerializeField] float stamina;
 
+
     public float HitPoint { get => hp; set => hp = value; }
 
     // Start is called before the first frame update
@@ -27,6 +31,7 @@ public class Hero : MonoBehaviour
         //hitPointSprites = new Sprite[6];
         //hearts = GameObject.Find("Hearts").GetComponent<Image>();
         hearts = GameObject.Find("HpFill").GetComponent<Image>();
+        collider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
