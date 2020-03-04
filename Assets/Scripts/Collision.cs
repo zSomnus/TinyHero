@@ -66,6 +66,8 @@ public class Collision : MonoBehaviour
         Gizmos.DrawWireCube(new Vector3(center.x + bottomOffset.x, center.y + bottomOffset.y, center.z), boxSizeGround);
         Gizmos.DrawWireCube(new Vector3(center.x + rightOffset.x, center.y + rightOffset.y, center.z), boxSizeWall);
         Gizmos.DrawWireCube(new Vector3(center.x + leftOffset.x, center.y + leftOffset.y, center.z), boxSizeWall);
+
+        Gizmos.color = Color.magenta;
         Gizmos.DrawWireCube(new Vector3(center.x + rightCornerOffset.x, center.y + rightCornerOffset.y, center.z), boxSizeWall);
         Gizmos.DrawWireCube(new Vector3(center.x + leftCornerOffset.x, center.y + leftCornerOffset.y, center.z), boxSizeWall);
 
