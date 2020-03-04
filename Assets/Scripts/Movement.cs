@@ -18,10 +18,10 @@ public class Movement : MonoBehaviour
     [SerializeField] int attackCount;
 
     [Space]
-    [Header("Walk")]
+    [Header("Run")]
     [SerializeField] bool canMove;
     [SerializeField] bool isMoving;
-    [SerializeField] float walkSpeed;
+    [SerializeField] float runSpeed;
 
     [Space]
     [Header("Jump")]
@@ -95,16 +95,18 @@ public class Movement : MonoBehaviour
             SlideStart();
         }
 
-        if (cornerClimbing)
+        // Sliding
+        if (isSliding)
         {
-            rb.velocity = Vector2.zero;
-            transform.position += new Vector3(0, cornerForce.y, 0);
-            if (collision.OnWallCorner == false)
+            canMove = false;
+            if (!collision.OnWall)
             {
-                transform.position += new Vector3(transform.localScale.x * cornerForce.x, 0, 0);
-            }
+                transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
+                rb.velocity = Vector2.zero;
 
+            }
         }
+
 
         if (Input.GetButtonDown("Hold") || Input.GetAxisRaw("Hold") > 0.1f)
         {
@@ -118,18 +120,11 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Sliding
-        if (isSliding)
-        {
-            canMove = false;
-            transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
-            rb.velocity = Vector2.zero;
-        }
 
         // Move right
         if (canMove)
         {
-            Walk();
+            Run();
             if (Input.GetAxis("Horizontal") != 0f)
             {
                 animator.SetBool("Moving", true);
@@ -240,12 +235,24 @@ public class Movement : MonoBehaviour
         }
     }
 
-    void Walk()
+    void Run()
     {
         if (canMove)
         {
-            float walkInput = Input.GetAxis("Horizontal");
-            rb.velocity = new Vector2(walkInput * walkSpeed, rb.velocity.y);
+            float runInput = Input.GetAxis("Horizontal");
+            if (runInput > 0)
+            {
+                runInput = runSpeed;
+            }
+            else if (runInput < 0)
+            {
+                runInput = -runSpeed;
+            }
+            else
+            {
+                runInput = 0f;
+            }
+            rb.velocity = new Vector2(runInput, rb.velocity.y);
         }
     }
 
@@ -362,6 +369,17 @@ public class Movement : MonoBehaviour
         {
             //cornerClimbing = false;
             animator.SetBool("CornerClimb", false);
+        }
+
+        if (cornerClimbing)
+        {
+            rb.velocity = Vector2.zero;
+            transform.position += new Vector3(0, cornerForce.y, 0);
+            if (collision.OnWallCorner == false)
+            {
+                transform.position += new Vector3(transform.localScale.x * cornerForce.x, 0, 0);
+            }
+
         }
     }
 

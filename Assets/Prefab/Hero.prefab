@@ -62,7 +62,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6591962057954441565}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.69, y: 0, z: 0}
+  m_LocalPosition: {x: 2.25, y: 3.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6591962057739342295}
@@ -171,7 +171,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.21, y: 0.13}
+  m_Offset: {x: 0, y: -0.19}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -182,7 +182,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.82, y: 1.4}
+  m_Size: {x: 0.7, y: 1.83}
   m_EdgeRadius: 0
 --- !u!114 &6591962057954441567
 MonoBehaviour:
@@ -203,7 +203,7 @@ MonoBehaviour:
   attackCount: 0
   canMove: 0
   isMoving: 0
-  walkSpeed: 8
+  runSpeed: 8
   jumpSpeed: 8
   minJumpSpeed: 3
   maxFallSpeed: 10
@@ -238,9 +238,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   bottomOffset: {x: 0.03, y: -1.19}
-  rightOffset: {x: 0.37, y: 0.6}
+  rightOffset: {x: 0.3, y: 0.6}
   leftOffset: {x: -0.3, y: 0.6}
-  rightCornerOffset: {x: 0.37, y: -0.3}
+  rightCornerOffset: {x: 0.3, y: -0.3}
   leftCornerOffset: {x: -0.3, y: -0.3}
   collisionRadius: 0.58
   boxSizeWall: {x: 0.25, y: 0.2}
@@ -248,7 +248,7 @@ MonoBehaviour:
   slideColSize: {x: 1.57, y: 0.96}
   slideColOffset: {x: 0.1, y: -0.62}
   idleColSize: {x: 0.7, y: 1.83}
-  idleColOffset: {x: 0.03, y: -0.19}
+  idleColOffset: {x: 0, y: -0.19}
   climbColSize: {x: 0.7, y: 1.83}
   climbColOffset: {x: 0.03, y: -0.05}
 --- !u!114 &6591962057954441573
@@ -292,7 +292,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0e3f6fdd2184f344faa24ec43a9f858a, type: 3}
   - {fileID: 21300000, guid: 3811f6464d59462488823cf4a0052fa2, type: 3}
   hp: 0
-  maxHp: 5
+  maxHp: 10
   maxMana: 0
   meleeDamage: 0
   rangeDamage: 0
