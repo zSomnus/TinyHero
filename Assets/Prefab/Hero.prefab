@@ -248,12 +248,13 @@ MonoBehaviour:
   collisionRadius: 0.58
   boxSizeWall: {x: 0.25, y: 0.2}
   boxSizeGround: {x: 0.5, y: 0.18}
-  slideColSize: {x: 1.57, y: 0.96}
-  slideColOffset: {x: 0.1, y: -0.62}
+  slideColSize: {x: 1.56, y: 0.92}
+  slideColOffset: {x: 0.12, y: -0.62}
   idleColSize: {x: 0.7, y: 1.83}
   idleColOffset: {x: 0, y: -0.19}
   climbColSize: {x: 0.7, y: 1.83}
   climbColOffset: {x: 0.03, y: -0.05}
+  onSpike: 0
 --- !u!114 &6591962057954441573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,4 +304,3 @@ MonoBehaviour:
   meleeDamage: 0
   rangeDamage: 0
   stamina: 0
-  onSpike: 0

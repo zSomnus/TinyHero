@@ -7,6 +7,7 @@ public class Hero : MonoBehaviour
 {
     BoxCollider2D collider;
     [SerializeField] LayerMask spikeLayer;
+    Animator animator;
 
     [SerializeField] Image hearts;
     [SerializeField] Sprite[] hitPointSprites;
@@ -32,6 +33,7 @@ public class Hero : MonoBehaviour
         //hearts = GameObject.Find("Hearts").GetComponent<Image>();
         hearts = GameObject.Find("HpFill").GetComponent<Image>();
         collider = GetComponent<BoxCollider2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -39,6 +41,7 @@ public class Hero : MonoBehaviour
     {
         Debug.Log("HP: " + HpPercentage(hp, maxHp));
         hearts.fillAmount = HpPercentage(hp, maxHp);
+        Die();
     }
 
     public float HpPercentage(float currentHp, float maxHp)
@@ -54,5 +57,14 @@ public class Hero : MonoBehaviour
     public void Healing(int heal) 
     {
         hp += heal;
+    }
+
+    void Die()
+    {
+        if(hp <= 0)
+        {
+            Destroy(GetComponent<Movement>());
+            animator.SetTrigger("Die");
+        }
     }
 }

@@ -427,6 +427,7 @@ public class Movement : MonoBehaviour
         //StartCoroutine(SlideMove(slideCd));
         if (heroCollision.OnGround)
         {
+            Debug.Log("Slide");
             isSliding = true;
             animator.SetBool("Sliding", true);
             collider.size = heroCollision.slideColSize;
