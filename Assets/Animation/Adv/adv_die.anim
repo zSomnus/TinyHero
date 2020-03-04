@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: adv_slide
+  m_Name: adv_die
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,21 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: fdf5f2a23067e1a4aa78d559973b3ab0, type: 3}
-    - time: 0.083333336
-      value: {fileID: 21300000, guid: 3c5cd5c049b3ace419276800ce7e297e, type: 3}
+      value: {fileID: 21300000, guid: 5c8b42efbd6d5b641ab0eafbc53ab7e8, type: 3}
     - time: 0.16666667
-      value: {fileID: 21300000, guid: fdf5f2a23067e1a4aa78d559973b3ab0, type: 3}
-    - time: 0.25
-      value: {fileID: 21300000, guid: 3c5cd5c049b3ace419276800ce7e297e, type: 3}
+      value: {fileID: 21300000, guid: bb7c13a234985e64b891ca332e3b09fb, type: 3}
+    - time: 0.33333334
+      value: {fileID: 21300000, guid: d786a3991aa8bcf40b3cb9ed51951a41, type: 3}
+    - time: 0.5
+      value: {fileID: 21300000, guid: 33e58034a87c47d4ca4e248bc2f36c9d, type: 3}
+    - time: 0.6666667
+      value: {fileID: 21300000, guid: 9c32c2760281a654894c973c74e7897b, type: 3}
+    - time: 0.8333333
+      value: {fileID: 21300000, guid: 7ce9d017cf7de1044a3f8fada3258f17, type: 3}
+    - time: 1
+      value: {fileID: 21300000, guid: d84e971e911ecf54eb2cac5c505e9fac, type: 3}
+    - time: 1.1666666
+      value: {fileID: 21300000, guid: d84e971e911ecf54eb2cac5c505e9fac, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,21 +54,25 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: fdf5f2a23067e1a4aa78d559973b3ab0, type: 3}
-    - {fileID: 21300000, guid: 3c5cd5c049b3ace419276800ce7e297e, type: 3}
-    - {fileID: 21300000, guid: fdf5f2a23067e1a4aa78d559973b3ab0, type: 3}
-    - {fileID: 21300000, guid: 3c5cd5c049b3ace419276800ce7e297e, type: 3}
+    - {fileID: 21300000, guid: 5c8b42efbd6d5b641ab0eafbc53ab7e8, type: 3}
+    - {fileID: 21300000, guid: bb7c13a234985e64b891ca332e3b09fb, type: 3}
+    - {fileID: 21300000, guid: d786a3991aa8bcf40b3cb9ed51951a41, type: 3}
+    - {fileID: 21300000, guid: 33e58034a87c47d4ca4e248bc2f36c9d, type: 3}
+    - {fileID: 21300000, guid: 9c32c2760281a654894c973c74e7897b, type: 3}
+    - {fileID: 21300000, guid: 7ce9d017cf7de1044a3f8fada3258f17, type: 3}
+    - {fileID: 21300000, guid: d84e971e911ecf54eb2cac5c505e9fac, type: 3}
+    - {fileID: 21300000, guid: d84e971e911ecf54eb2cac5c505e9fac, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.26666668
+    m_StopTime: 1.1833333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -75,8 +87,8 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.25
-    functionName: SlideEnd
+  - time: 1
+    functionName: DestroyAnimator
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

@@ -90,7 +90,7 @@ public class Movement : MonoBehaviour
         {
             startCounting = false;
             //StartCoroutine("SlideMove");
-            SlideStart();
+            Slide();
         }
 
         // Sliding
@@ -422,12 +422,11 @@ public class Movement : MonoBehaviour
         canMove = false;
     }
 
-    void SlideStart()
+    void Slide()
     {
         //StartCoroutine(SlideMove(slideCd));
         if (heroCollision.OnGround)
         {
-            Debug.Log("Slide");
             isSliding = true;
             animator.SetBool("Sliding", true);
             collider.size = heroCollision.slideColSize;
