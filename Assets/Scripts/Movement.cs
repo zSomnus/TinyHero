@@ -59,7 +59,7 @@ public class Movement : MonoBehaviour
     [SerializeField] Vector2 cornerForce;
     [SerializeField] bool isHolding;
 
-    Collision collision;
+    HeroCollision heroCollision;
     BoxCollider2D collider;
     Animator animator;
 
@@ -72,7 +72,7 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        collision = GetComponent<Collision>();
+        heroCollision = GetComponent<HeroCollision>();
         collider = GetComponent<BoxCollider2D>();
         canMove = true;
         startCounting = false;
@@ -82,8 +82,6 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log(Input.GetAxisRaw("Hold"));
-
         FlipSprite();
         ClimbOnCorner();
 
@@ -99,7 +97,7 @@ public class Movement : MonoBehaviour
         if (isSliding)
         {
             canMove = false;
-            if (!collision.OnWall)
+            if (!heroCollision.OnWall)
             {
                 transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
                 rb.velocity = Vector2.zero;
@@ -154,7 +152,7 @@ public class Movement : MonoBehaviour
         Jump();
         DoubleJump();
 
-        if (collision.OnGround)
+        if (heroCollision.OnGround)
         {
             animator.SetBool("InAir", false);
             canDoubleJump = true;
@@ -164,7 +162,7 @@ public class Movement : MonoBehaviour
             animator.SetBool("InAir", true);
         }
 
-        if (collision.OnGround && !collision.OnWall)
+        if (heroCollision.OnGround && !heroCollision.OnWall)
         {
             animator.SetBool("Jumping", false);
         }
@@ -174,11 +172,11 @@ public class Movement : MonoBehaviour
         }
 
         // Jump & fall
-        if (rb.velocity.y > 0.5f && !collision.OnGround)
+        if (rb.velocity.y > 0.5f && !heroCollision.OnGround)
         {
             animator.SetBool("Jumping", true);
         }
-        else if (rb.velocity.y < -0.5f && !collision.OnGround)
+        else if (rb.velocity.y < -0.5f && !heroCollision.OnGround)
         {
             animator.SetBool("Jumping", false);
             animator.SetBool("Falling", true);
@@ -189,7 +187,7 @@ public class Movement : MonoBehaviour
             animator.SetBool("Falling", false);
         }
 
-        if (collision.OnWall)
+        if (heroCollision.OnWall)
         {
             canDoubleJump = true;
         }
@@ -258,7 +256,7 @@ public class Movement : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetButtonDown("Jump") && collision.OnGround)
+        if (Input.GetButtonDown("Jump") && heroCollision.OnGround)
         {
             animator.SetBool("Jumping", false);
             //collision.OnWall(false);
@@ -266,7 +264,6 @@ public class Movement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             collider.size = new Vector2(0.82f, 1.4f);
             collider.offset = new Vector2(0.21f, 0.13f);
-            Debug.Log("Jump()");
             //else if (collision.OnWall && !collision.OnGround)
             //{
             //    rb.velocity += new Vector2(-transform.localScale.x * wallJumpVector.x, wallJumpVector.y);
@@ -284,7 +281,7 @@ public class Movement : MonoBehaviour
 
     void DoubleJump()
     {
-        if (Input.GetButtonDown("Jump") && !collision.OnGround && !collision.OnWall && canDoubleJump)
+        if (Input.GetButtonDown("Jump") && !heroCollision.OnGround && !heroCollision.OnWall && canDoubleJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             canDoubleJump = false;
@@ -294,10 +291,10 @@ public class Movement : MonoBehaviour
 
     void Climb()
     {
-        if (collision.OnWall)// && !collision.OnGround)
+        if (heroCollision.OnWall)// && !collision.OnGround)
         {
-            collider.size = collision.climbColSize;
-            collider.offset = collision.climbColOffset;
+            collider.size = heroCollision.climbColSize;
+            collider.offset = heroCollision.climbColOffset;
 
             if (isHolding)
             {
@@ -316,10 +313,10 @@ public class Movement : MonoBehaviour
                 {
                     //animator.SetBool("Hold", false);
                     //OnWallSlide();
-                    Debug.Log("On wall slide");
                     if (rb.velocity.y < 0f)
                     {
                         OnWallSlide();
+                        canDoubleJump = true;
                     }
 
                 }
@@ -334,7 +331,7 @@ public class Movement : MonoBehaviour
 
             //}
         }
-        else if (collision.OnWallCorner)
+        else if (heroCollision.OnWallCorner)
         {
             rb.gravityScale = 0f;
             //canMove = false;
@@ -345,15 +342,15 @@ public class Movement : MonoBehaviour
             animator.SetBool("OnWall", false);
             animator.SetBool("Hold", false);
             canMove = true;
-            collider.size = collision.idleColSize;
-            collider.offset = collision.idleColOffset;
+            collider.size = heroCollision.idleColSize;
+            collider.offset = heroCollision.idleColOffset;
         }
     }
 
     void ClimbOnCorner()
     {
         //if (collision.OnGround == false && collision.OnWall == false && collision.OnWallCorner == true)
-        if (collision.OnWallCorner && !collision.OnWall && !collision.OnGround)
+        if (heroCollision.OnWallCorner && !heroCollision.OnWall && !heroCollision.OnGround)
         {
             //if (!collision.OnGround && !collision.OnWall && !collision.OnWallCorner)
             //{
@@ -375,7 +372,7 @@ public class Movement : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
             transform.position += new Vector3(0, cornerForce.y, 0);
-            if (collision.OnWallCorner == false)
+            if (heroCollision.OnWallCorner == false)
             {
                 transform.position += new Vector3(transform.localScale.x * cornerForce.x, 0, 0);
             }
@@ -428,13 +425,12 @@ public class Movement : MonoBehaviour
     void SlideStart()
     {
         //StartCoroutine(SlideMove(slideCd));
-        if (collision.OnGround)
+        if (heroCollision.OnGround)
         {
             isSliding = true;
-            Debug.Log("SlideStart()");
             animator.SetBool("Sliding", true);
-            collider.size = collision.slideColSize;
-            collider.offset = collision.slideColOffset;
+            collider.size = heroCollision.slideColSize;
+            collider.offset = heroCollision.slideColOffset;
             rb.gravityScale = 0f;
         }
 
@@ -445,10 +441,9 @@ public class Movement : MonoBehaviour
     {
         canMove = true;
         isSliding = false;
-        Debug.Log("SlideEnd()");
         animator.SetBool("Sliding", false);
-        collider.size = collision.idleColSize;
-        collider.offset = collision.idleColOffset;
+        collider.size = heroCollision.idleColSize;
+        collider.offset = heroCollision.idleColOffset;
         rb.gravityScale = 1f;
         //StartCoroutine("SlideStart");
         slideTimer = 0f;
