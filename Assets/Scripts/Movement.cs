@@ -57,6 +57,7 @@ public class Movement : MonoBehaviour
     [Header("Climb")]
     [SerializeField] Vector3 climbVector;
     [SerializeField] Vector2 cornerForce;
+    [SerializeField] bool isHolding;
 
     Collision collision;
     BoxCollider2D collider;
@@ -96,6 +97,7 @@ public class Movement : MonoBehaviour
 
         if (cornerClimbing)
         {
+            rb.velocity = Vector2.zero;
             transform.position += new Vector3(0, cornerForce.y, 0);
             if (collision.OnWallCorner == false)
             {
@@ -103,8 +105,16 @@ public class Movement : MonoBehaviour
             }
 
         }
-    }
 
+        if (Input.GetButtonDown("Hold") || Input.GetAxisRaw("Hold") > 0.1f)
+        {
+            isHolding = true;
+        }
+        else
+        {
+            isHolding = false;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -188,7 +198,7 @@ public class Movement : MonoBehaviour
         {
             canDoubleJump = true;
         }
-        
+
 
         // Attack
         //if (Input.GetButtonDown("Fire1"))
@@ -241,30 +251,27 @@ public class Movement : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && collision.OnGround)
         {
-            if (collision.OnGround)
-            {
-                animator.SetBool("Jumping", false);
-                //collision.OnWall(false);
-                //Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
-                rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
-                collider.size = new Vector2(0.82f, 1.4f);
-                collider.offset = new Vector2(0.21f, 0.13f);
-                Debug.Log("Jump()");
-            }
-            else if (collision.OnWall && !collision.OnGround)
-            {
-                rb.velocity += new Vector2(-transform.localScale.x * wallJumpVector.x, wallJumpVector.y);
-                //rb.velocity += new Vector2(0f, wallJumpVector.y);
-                //rb.velocity += new Vector2(0f, )
-                canMove = true;
-                Debug.Log("Wall Jump");
-            }
-            else
-            {
+            animator.SetBool("Jumping", false);
+            //collision.OnWall(false);
+            //Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
+            rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+            collider.size = new Vector2(0.82f, 1.4f);
+            collider.offset = new Vector2(0.21f, 0.13f);
+            Debug.Log("Jump()");
+            //else if (collision.OnWall && !collision.OnGround)
+            //{
+            //    rb.velocity += new Vector2(-transform.localScale.x * wallJumpVector.x, wallJumpVector.y);
+            //    //rb.velocity += new Vector2(0f, wallJumpVector.y);
+            //    //rb.velocity += new Vector2(0f, )
+            //    canMove = true;
+            //    Debug.Log("Wall Jump");
+            //}
+            //else
+            //{
 
-            }
+            //}
         }
     }
 
@@ -280,12 +287,12 @@ public class Movement : MonoBehaviour
 
     void Climb()
     {
-        if (collision.OnWall && !collision.OnGround)
+        if (collision.OnWall)// && !collision.OnGround)
         {
             collider.size = collision.climbColSize;
             collider.offset = collision.climbColOffset;
 
-            if (Input.GetButtonDown("Hold") || Input.GetAxisRaw("Hold") > 0.1f)
+            if (isHolding)
             {
                 rb.gravityScale = 0f;
                 rb.velocity = new Vector2(0f, Input.GetAxis("Vertical") * climbVector.y);
@@ -300,9 +307,8 @@ public class Movement : MonoBehaviour
                 if ((transform.localScale.x == 1 && Input.GetAxis("Horizontal") > 0.2f) ||
                     (transform.localScale.x == -1 && Input.GetAxis("Horizontal") < -0.2f))
                 {
-                    animator.SetBool("Hold", false);
+                    //animator.SetBool("Hold", false);
                     //OnWallSlide();
-                    rb.gravityScale = 1f;
                     Debug.Log("On wall slide");
                     if (rb.velocity.y < 0f)
                     {
@@ -315,11 +321,16 @@ public class Movement : MonoBehaviour
                     animator.SetBool("OnWall", false);
                 }
             }
-            if (Input.GetButtonUp("Slide"))
-            {
-                animator.SetBool("Hold", false);
+            //if (Input.GetButtonUp("Slide"))
+            //{
+            //    animator.SetBool("Hold", false);
 
-            }
+            //}
+        }
+        else if (collision.OnWallCorner)
+        {
+            rb.gravityScale = 0f;
+            //canMove = false;
         }
         else
         {
@@ -335,18 +346,21 @@ public class Movement : MonoBehaviour
     void ClimbOnCorner()
     {
         //if (collision.OnGround == false && collision.OnWall == false && collision.OnWallCorner == true)
-        if (collision.OnWallCorner)
+        if (collision.OnWallCorner && !collision.OnWall && !collision.OnGround)
         {
-            if (collision.OnGround == false && collision.OnWall == false && collision.OnWallCorner == true)
-            {
-                collider.size = new Vector2(collision.climbColSize.x, 0.8f);
-                collider.offset = new Vector2(collision.climbColOffset.x, 0.25f);
-                animator.SetBool("CornerClimb", true);
-                //transform.position += new Vector3(transform.localScale.x * 0.5f, 1f, 0);
-            }
+            //if (!collision.OnGround && !collision.OnWall && !collision.OnWallCorner)
+            //{
+            //collider.size = new Vector2(collision.climbColSize.x, 0.8f);
+            //collider.offset = new Vector2(collision.climbColOffset.x, 0.25f);
+            //cornerClimbing = true;
+            rb.gravityScale = 0f;
+            animator.SetBool("CornerClimb", true);
+            //transform.position += new Vector3(transform.localScale.x * 0.5f, 1f, 0);
+            //}
         }
         else
         {
+            //cornerClimbing = false;
             animator.SetBool("CornerClimb", false);
         }
     }

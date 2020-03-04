@@ -214,9 +214,10 @@ MonoBehaviour:
   fallMultiplier: 5
   lowJumpMultiplier: 6
   wallSlideSpeed: 2
-  wallJumpVector: {x: 10, y: 10000}
+  wallJumpVector: {x: 10, y: 0}
   climbVector: {x: 0, y: 5, z: 0}
-  cornerForce: {x: 0.3, y: 0.3}
+  cornerForce: {x: 0.3, y: 0.15}
+  isHolding: 0
   cornerClimbing: 0
 --- !u!114 &6591962057954441572
 MonoBehaviour:
@@ -239,11 +240,11 @@ MonoBehaviour:
   bottomOffset: {x: 0.03, y: -1.19}
   rightOffset: {x: 0.37, y: 0.6}
   leftOffset: {x: -0.3, y: 0.6}
-  rightCornerOffset: {x: 0.37, y: -0.8}
-  leftCornerOffset: {x: -0.3, y: -0.8}
+  rightCornerOffset: {x: 0.37, y: -0.3}
+  leftCornerOffset: {x: -0.3, y: -0.3}
   collisionRadius: 0.58
   boxSizeWall: {x: 0.25, y: 0.2}
-  boxSizeGround: {x: 0.6, y: 0.18}
+  boxSizeGround: {x: 0.5, y: 0.18}
   slideColSize: {x: 1.57, y: 0.96}
   slideColOffset: {x: 0.1, y: -0.62}
   idleColSize: {x: 0.7, y: 1.83}

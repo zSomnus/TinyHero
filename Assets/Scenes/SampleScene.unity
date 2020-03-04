@@ -187,6 +187,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlimeTest
       objectReference: {fileID: 0}
+    - target: {fileID: 8752192891382659308, guid: d3dfa4b14e57d1c4496c9e2902000ff7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3dfa4b14e57d1c4496c9e2902000ff7, type: 3}
 --- !u!1 &117380403
