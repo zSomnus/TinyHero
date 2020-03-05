@@ -102,7 +102,7 @@ public class Movement : MonoBehaviour
         if (isSliding)
         {
             canMove = false;
-            if (!heroCollision.OnWall)
+            if(heroCollision.OnGround) //(!heroCollision.OnWall)
             {
                 transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
                 rb.velocity = Vector2.zero;
@@ -264,8 +264,13 @@ public class Movement : MonoBehaviour
     {
         if (heroCollision.OnWall)
         {
-            collider.size = heroCollision.climbColSize;
-            collider.offset = heroCollision.climbColOffset;
+            if (!heroCollision.OnGround)
+            {
+                collider.size = heroCollision.climbColSize;
+                collider.offset = heroCollision.climbColOffset;
+
+
+            }
 
             if (isHolding)
             {
