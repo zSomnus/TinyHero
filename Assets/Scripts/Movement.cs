@@ -373,7 +373,7 @@ public class Movement : MonoBehaviour
         animator.SetBool("Sliding", false);
         collider.size = heroCollision.idleColSize;
         collider.offset = heroCollision.idleColOffset;
-        rb.gravityScale = 1f;
+        //rb.gravityScale = 1f;
         slideTimer = 0f;
         startCounting = true;
     }

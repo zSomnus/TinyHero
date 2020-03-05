@@ -254,6 +254,10 @@ MonoBehaviour:
   idleColOffset: {x: 0, y: -0.19}
   climbColSize: {x: 0.7, y: 1.83}
   climbColOffset: {x: 0.03, y: -0.05}
+  jumpColSize: {x: 0.7, y: 1.48}
+  jumpColOffset: {x: 0, y: 0.12}
+  fallColSize: {x: 0.7, y: 1.63}
+  fallColOffset: {x: 0, y: -0.03}
   onSpike: 0
 --- !u!114 &6591962057954441573
 MonoBehaviour:

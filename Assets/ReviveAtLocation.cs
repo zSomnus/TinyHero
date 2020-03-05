@@ -32,8 +32,22 @@ public class ReviveAtLocation : MonoBehaviour
         {
             heroCollision.OnSpike = false;
             hero.TakeDamage(spikeDamage);
-            heroCollision.gameObject.transform.position = revivePosition;
+            StartCoroutine(Revive());
         }
+    }
+
+    IEnumerator Revive()
+    {
+        hero.GetComponent<Rigidbody2D>().gravityScale = 0f;
+        hero.GetComponent<BoxCollider2D>().enabled = false;
+        hero.GetComponent<Movement>().enabled = false;
+        hero.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        yield return new WaitForSeconds(2);
+            heroCollision.gameObject.transform.position = revivePosition;
+        hero.GetComponent<Rigidbody2D>().gravityScale = 1f;
+        hero.GetComponent<BoxCollider2D>().enabled = true;
+        yield return new WaitForSeconds(1);
+        hero.GetComponent<Movement>().enabled = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
