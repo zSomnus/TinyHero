@@ -82,6 +82,12 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (heroCollision.OnGround && !isSliding)
+        {
+            collider.size = heroCollision.idleColSize;
+            collider.offset = heroCollision.idleColOffset;
+        }
+
         FlipSprite();
         ClimbOnCorner();
 
@@ -89,7 +95,6 @@ public class Movement : MonoBehaviour
         if ((Input.GetButtonDown("Slide") || Input.GetAxisRaw("Slide") > 0.1f) && slideTimer >= slideCd)
         {
             startCounting = false;
-            //StartCoroutine("SlideMove");
             Slide();
         }
 
@@ -139,15 +144,6 @@ public class Movement : MonoBehaviour
             slideTimer += Time.deltaTime;
         }
 
-        //// Input Slide
-        //if ((Input.GetButtonDown("Slide") || Input.GetAxisRaw("Slide") > 0.1f) && slideTimer >= slideCd)
-        //{
-        //    startCounting = false;
-        //    //StartCoroutine("SlideMove");
-        //    SlideStart();
-        //}
-
-        // Jump
 
         Jump();
         DoubleJump();
@@ -175,11 +171,15 @@ public class Movement : MonoBehaviour
         if (rb.velocity.y > 0.5f && !heroCollision.OnGround)
         {
             animator.SetBool("Jumping", true);
+            collider.size = heroCollision.jumpColSize;
+            collider.offset = heroCollision.jumpColOffset;
         }
         else if (rb.velocity.y < -0.5f && !heroCollision.OnGround)
         {
             animator.SetBool("Jumping", false);
             animator.SetBool("Falling", true);
+            collider.size = heroCollision.fallColSize;
+            collider.offset = heroCollision.fallColOffset;
         }
         else// if(collision.OnGround)
         {
@@ -193,21 +193,6 @@ public class Movement : MonoBehaviour
         }
 
 
-        // Attack
-        //if (Input.GetButtonDown("Fire1"))
-        //{
-        //    attackCount++;
-        //    //animator.SetBool("Attacking", true);
-        //    //Attack();
-        //}
-
-        //// Attack combo
-        //if (attackCount > 0)
-        //{
-        //    //canMove = false;
-        //    Attack();
-        //    attackCount = 0;
-        //}
         SimulatePhysics();
 
 
@@ -259,23 +244,9 @@ public class Movement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && heroCollision.OnGround)
         {
             animator.SetBool("Jumping", false);
-            //collision.OnWall(false);
-            //Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             collider.size = new Vector2(0.82f, 1.4f);
             collider.offset = new Vector2(0.21f, 0.13f);
-            //else if (collision.OnWall && !collision.OnGround)
-            //{
-            //    rb.velocity += new Vector2(-transform.localScale.x * wallJumpVector.x, wallJumpVector.y);
-            //    //rb.velocity += new Vector2(0f, wallJumpVector.y);
-            //    //rb.velocity += new Vector2(0f, )
-            //    canMove = true;
-            //    Debug.Log("Wall Jump");
-            //}
-            //else
-            //{
-
-            //}
         }
     }
 
@@ -291,7 +262,7 @@ public class Movement : MonoBehaviour
 
     void Climb()
     {
-        if (heroCollision.OnWall)// && !collision.OnGround)
+        if (heroCollision.OnWall)
         {
             collider.size = heroCollision.climbColSize;
             collider.offset = heroCollision.climbColOffset;
@@ -301,7 +272,6 @@ public class Movement : MonoBehaviour
                 rb.gravityScale = 0f;
                 rb.velocity = new Vector2(0f, Input.GetAxis("Vertical") * climbVector.y);
                 animator.SetBool("Hold", true);
-                //transform.position += new Vector3(0f, Input.GetAxis("Vertical") * 5f, 0f);
             }
             else
             {
@@ -311,30 +281,21 @@ public class Movement : MonoBehaviour
                 if ((transform.localScale.x == 1 && Input.GetAxis("Horizontal") > 0.2f) ||
                     (transform.localScale.x == -1 && Input.GetAxis("Horizontal") < -0.2f))
                 {
-                    //animator.SetBool("Hold", false);
-                    //OnWallSlide();
                     if (rb.velocity.y < 0f)
                     {
                         OnWallSlide();
                         canDoubleJump = true;
                     }
-
                 }
                 else
                 {
                     animator.SetBool("OnWall", false);
                 }
             }
-            //if (Input.GetButtonUp("Slide"))
-            //{
-            //    animator.SetBool("Hold", false);
-
-            //}
         }
         else if (heroCollision.OnWallCorner)
         {
             rb.gravityScale = 0f;
-            //canMove = false;
         }
         else
         {
@@ -342,29 +303,19 @@ public class Movement : MonoBehaviour
             animator.SetBool("OnWall", false);
             animator.SetBool("Hold", false);
             canMove = true;
-            collider.size = heroCollision.idleColSize;
-            collider.offset = heroCollision.idleColOffset;
+
         }
     }
 
     void ClimbOnCorner()
     {
-        //if (collision.OnGround == false && collision.OnWall == false && collision.OnWallCorner == true)
         if (heroCollision.OnWallCorner && !heroCollision.OnWall && !heroCollision.OnGround)
         {
-            //if (!collision.OnGround && !collision.OnWall && !collision.OnWallCorner)
-            //{
-            //collider.size = new Vector2(collision.climbColSize.x, 0.8f);
-            //collider.offset = new Vector2(collision.climbColOffset.x, 0.25f);
-            //cornerClimbing = true;
             rb.gravityScale = 0f;
             animator.SetBool("CornerClimb", true);
-            //transform.position += new Vector3(transform.localScale.x * 0.5f, 1f, 0);
-            //}
         }
         else
         {
-            //cornerClimbing = false;
             animator.SetBool("CornerClimb", false);
         }
 
@@ -380,26 +331,8 @@ public class Movement : MonoBehaviour
         }
     }
 
-    //IEnumerator SlideMove()
-    //{
-    //    Debug.Log("Slide used");
-
-    //    SlideStart();
-    //    yield return new WaitForSeconds(slideCd);
-
-    //    //canMove = true;
-    //    //isSliding = false;
-    //    //Debug.Log("SlideEnd()");
-    //    //animator.SetBool("Sliding", false);
-    //    //collider.size = collision.idleColSize;
-    //    //collider.offset = collision.idleColOffset;
-    //    //rb.gravityScale = 1f;
-
-    //}
     void CornerClimbStart()
     {
-        //collider.size = collision.climbColSize;
-        //collider.offset = collision.climbColOffset;
         cornerClimbing = true;
         canMove = false;
         rb.gravityScale = 0f;
@@ -407,8 +340,6 @@ public class Movement : MonoBehaviour
     }
     void CornerClimbEnd()
     {
-        //collider.size = collision.idleColSize;
-        //collider.offset = collision.idleColOffset;
         cornerClimbing = false;
         canMove = true;
         rb.gravityScale = 1f;
@@ -424,7 +355,6 @@ public class Movement : MonoBehaviour
 
     void Slide()
     {
-        //StartCoroutine(SlideMove(slideCd));
         if (heroCollision.OnGround)
         {
             isSliding = true;
@@ -434,7 +364,6 @@ public class Movement : MonoBehaviour
             rb.gravityScale = 0f;
         }
 
-        //transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
     }
 
     void SlideEnd()
@@ -445,21 +374,9 @@ public class Movement : MonoBehaviour
         collider.size = heroCollision.idleColSize;
         collider.offset = heroCollision.idleColOffset;
         rb.gravityScale = 1f;
-        //StartCoroutine("SlideStart");
         slideTimer = 0f;
         startCounting = true;
     }
-
-    //void Attack()
-    //{
-    //    if (!isAttackOne)
-    //    {
-    //        animator.SetTrigger("Attack");
-    //        animator.SetBool("Attack1", true);
-    //        //canMove = false;
-
-    //    }
-    //}
 
     void AttackOneStart()
     {
@@ -471,7 +388,6 @@ public class Movement : MonoBehaviour
     {
         isAttackOne = false;
         animator.SetBool("Attack1", false);
-        //canMove = true;
     }
 
     void AttackTwoStart()

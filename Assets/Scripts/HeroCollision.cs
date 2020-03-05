@@ -19,15 +19,21 @@ public class HeroCollision : MonoBehaviour
     [SerializeField] float collisionRadius = 0.1f;
     [SerializeField] Vector2 boxSizeWall;
     [SerializeField] Vector2 boxSizeGround;
-
+    [Header("Slide")]
     public Vector2 slideColSize;
     public Vector2 slideColOffset;
-
+    [Header("Idle")]
     public Vector2 idleColSize;
     public Vector2 idleColOffset;
-
+    [Header("Climb")]
     public Vector2 climbColSize;
     public Vector2 climbColOffset;
+    [Header("Jump")]
+    public Vector2 jumpColSize;
+    public Vector2 jumpColOffset;
+    [Header("Fall")]
+    public Vector2 fallColSize;
+    public Vector2 fallColOffset;
 
     [Space]
     Hero hero;
