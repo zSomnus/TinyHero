@@ -18363,6 +18363,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3045118968793059524, guid: 9ee2769475d8aee409aa298b5637eaeb,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045118968793059524, guid: 9ee2769475d8aee409aa298b5637eaeb,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 8.656864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045118968793059524, guid: 9ee2769475d8aee409aa298b5637eaeb,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: -0.59819794
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045118968793059524, guid: 9ee2769475d8aee409aa298b5637eaeb,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
+      value: 15.183674
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045118968793059524, guid: 9ee2769475d8aee409aa298b5637eaeb,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
+      value: -26.531288
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045118968793059524, guid: 9ee2769475d8aee409aa298b5637eaeb,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
+      value: 5.9564247
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045118968793059524, guid: 9ee2769475d8aee409aa298b5637eaeb,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
+      value: -17.304745
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045118968793059524, guid: 9ee2769475d8aee409aa298b5637eaeb,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: -11.3596
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045118968793059524, guid: 9ee2769475d8aee409aa298b5637eaeb,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: 6.290943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045118968793059524, guid: 9ee2769475d8aee409aa298b5637eaeb,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: -11.115971
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045118968793059524, guid: 9ee2769475d8aee409aa298b5637eaeb,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: -11.696118
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045118968793059524, guid: 9ee2769475d8aee409aa298b5637eaeb,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].x
+      value: 14.948761
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045118968793059524, guid: 9ee2769475d8aee409aa298b5637eaeb,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
+      value: 8.803356
+      objectReference: {fileID: 0}
     - target: {fileID: 3045118968793059525, guid: 9ee2769475d8aee409aa298b5637eaeb,
         type: 3}
       propertyPath: reviveRoom
