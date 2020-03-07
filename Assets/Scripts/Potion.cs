@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Potion : MonoBehaviour
 {
-    public int healAmount = 1;
+    public int healAmount;
     protected GameObject hero;
 
 
@@ -18,7 +18,7 @@ public class Potion : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player")
         {
