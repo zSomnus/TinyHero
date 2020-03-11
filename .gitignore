@@ -14,7 +14,7 @@
 !/[Aa]ssets/**/*.meta
 
 # Ignore Material.meta in /Assets/Sprites/
-/[Aa]ssets/Sprites/**/*.meta
+/[Aa]ssets/Sprites/Goblin/Materials.meta
 
 # Ignore meta in /Assets/Cinemachine/Timeline/*.meta
 /[Aa]ssets/Cinemachine/Timeline/*.meta
