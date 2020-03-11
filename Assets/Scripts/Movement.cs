@@ -59,13 +59,23 @@ public class Movement : MonoBehaviour
     [SerializeField] Vector2 cornerForce;
     [SerializeField] bool isHolding;
 
+    [Header("Audio")]
+    AudioSource audio;
+    [SerializeField] AudioClip slideAudio;
+    [SerializeField] AudioClip attackAudio;
+    [SerializeField] AudioClip jumpAudio;
+
     HeroCollision heroCollision;
     BoxCollider2D collider;
     Animator animator;
 
     public bool cornerClimbing;
 
-
+    private void Awake()
+    {
+        audio = GetComponent<AudioSource>();
+        slideAudio = Resources.Load<AudioClip>("Audio/8Bit SFX/Slash01");
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -79,6 +89,7 @@ public class Movement : MonoBehaviour
         slideTimer = slideCd;
         isMoving = false;
     }
+
 
     private void FixedUpdate()
     {
@@ -95,6 +106,12 @@ public class Movement : MonoBehaviour
         if ((Input.GetButtonDown("Slide") || Input.GetAxisRaw("Slide") > 0.1f) && slideTimer >= slideCd)
         {
             startCounting = false;
+            if (slideAudio != null)
+            {
+                audio.clip = slideAudio;
+                Debug.Log("Slide audio");
+            }
+
             Slide();
         }
 
@@ -102,7 +119,7 @@ public class Movement : MonoBehaviour
         if (isSliding)
         {
             canMove = false;
-            if (!heroCollision.OnWall)
+            if(heroCollision.OnGround) //(!heroCollision.OnWall)
             {
                 transform.position += new Vector3(transform.localScale.x * slideSpeed * Time.deltaTime, 0f, 0f);
                 rb.velocity = Vector2.zero;
@@ -264,8 +281,13 @@ public class Movement : MonoBehaviour
     {
         if (heroCollision.OnWall)
         {
-            collider.size = heroCollision.climbColSize;
-            collider.offset = heroCollision.climbColOffset;
+            if (!heroCollision.OnGround)
+            {
+                collider.size = heroCollision.climbColSize;
+                collider.offset = heroCollision.climbColOffset;
+
+
+            }
 
             if (isHolding)
             {
