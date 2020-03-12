@@ -74,7 +74,7 @@ public class Movement : MonoBehaviour
     private void Awake()
     {
         audio = GetComponent<AudioSource>();
-        slideAudio = Resources.Load<AudioClip>("Audio/8Bit SFX/Slash01");
+        slideAudio = Resources.Load<AudioClip>("Slash01");
     }
 
     // Start is called before the first frame update
@@ -106,6 +106,7 @@ public class Movement : MonoBehaviour
         if ((Input.GetButtonDown("Slide") || Input.GetAxisRaw("Slide") > 0.1f) && slideTimer >= slideCd)
         {
             startCounting = false;
+            
             if (slideAudio != null)
             {
                 audio.clip = slideAudio;
@@ -429,5 +430,10 @@ public class Movement : MonoBehaviour
         {
             transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }
+    }
+
+    void PlaySlideAudio()
+    {
+        AudioSource.PlayClipAtPoint(slideAudio, Camera.main.transform.position);
     }
 }
