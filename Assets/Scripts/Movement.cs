@@ -73,8 +73,10 @@ public class Movement : MonoBehaviour
 
     private void Awake()
     {
-        audio = GetComponent<AudioSource>();
-        slideAudio = Resources.Load<AudioClip>("Audio/8Bit SFX/Slash01");
+        audio = Camera.main.GetComponent<AudioSource>();
+        slideAudio = Resources.Load<AudioClip>("Slash01");
+        jumpAudio = Resources.Load<AudioClip>("Retro_8-Bit_Game-Jump_Lift_TakeOff_05");
+        attackAudio = Resources.Load<AudioClip>("Damage01");
     }
 
     // Start is called before the first frame update
@@ -106,10 +108,10 @@ public class Movement : MonoBehaviour
         if ((Input.GetButtonDown("Slide") || Input.GetAxisRaw("Slide") > 0.1f) && slideTimer >= slideCd)
         {
             startCounting = false;
+            
             if (slideAudio != null)
             {
                 audio.clip = slideAudio;
-                Debug.Log("Slide audio");
             }
 
             Slide();
@@ -403,7 +405,7 @@ public class Movement : MonoBehaviour
     void AttackOneStart()
     {
         isAttackOne = true;
-
+        audio.PlayOneShot(attackAudio);
     }
 
     void AttackOneEnd()
@@ -429,5 +431,19 @@ public class Movement : MonoBehaviour
         {
             transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }
+    }
+
+    // Audios
+    void PlaySlideAudio()
+    {
+        audio.PlayOneShot(slideAudio);
+    }
+    void PlayJumpAudio()
+    {
+        audio.PlayOneShot(jumpAudio);
+    }
+    void PlayAttackAudio()
+    {
+        audio.PlayOneShot(attackAudio);
     }
 }
