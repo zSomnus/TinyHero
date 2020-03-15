@@ -73,8 +73,10 @@ public class Movement : MonoBehaviour
 
     private void Awake()
     {
-        audio = GetComponent<AudioSource>();
+        audio = Camera.main.GetComponent<AudioSource>();
         slideAudio = Resources.Load<AudioClip>("Slash01");
+        jumpAudio = Resources.Load<AudioClip>("Retro_8-Bit_Game-Jump_Lift_TakeOff_05");
+        attackAudio = Resources.Load<AudioClip>("Damage01");
     }
 
     // Start is called before the first frame update
@@ -110,7 +112,6 @@ public class Movement : MonoBehaviour
             if (slideAudio != null)
             {
                 audio.clip = slideAudio;
-                Debug.Log("Slide audio");
             }
 
             Slide();
@@ -404,7 +405,7 @@ public class Movement : MonoBehaviour
     void AttackOneStart()
     {
         isAttackOne = true;
-
+        audio.PlayOneShot(attackAudio);
     }
 
     void AttackOneEnd()
@@ -432,8 +433,17 @@ public class Movement : MonoBehaviour
         }
     }
 
+    // Audios
     void PlaySlideAudio()
     {
-        AudioSource.PlayClipAtPoint(slideAudio, Camera.main.transform.position);
+        audio.PlayOneShot(slideAudio);
+    }
+    void PlayJumpAudio()
+    {
+        audio.PlayOneShot(jumpAudio);
+    }
+    void PlayAttackAudio()
+    {
+        audio.PlayOneShot(attackAudio);
     }
 }
