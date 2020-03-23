@@ -39,7 +39,7 @@ public class InGameMenu : MonoBehaviour
 
     public void Retry() 
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
     }
 
