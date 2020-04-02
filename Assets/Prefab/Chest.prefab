@@ -121,7 +121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80214c19a3f5b80499db2c5b29980de3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemSpawn: {fileID: 6073104020546610396, guid: 5024d0371846e45448b60ac3c65e2441,
-    type: 3}
+  itemSpawn: {fileID: 0}
   sprite1: {fileID: 5586943174218530051, guid: 0ed66a44c83477c428f58059cda84eed, type: 3}
   sprite2: {fileID: 1371628056344953650, guid: 0ed66a44c83477c428f58059cda84eed, type: 3}
