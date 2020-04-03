@@ -406,6 +406,7 @@ public class Movement : MonoBehaviour
     {
         isAttackOne = true;
         audio.PlayOneShot(attackAudio);
+        SlideEnd();
     }
 
     void AttackOneEnd()
