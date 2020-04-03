@@ -208,7 +208,7 @@ MonoBehaviour:
   runSpeed: 8
   jumpSpeed: 8
   minJumpSpeed: 3
-  maxFallSpeed: 10
+  maxFallSpeed: 13
   canDoubleJump: 0
   slideSpeed: 12
   isSliding: 0
