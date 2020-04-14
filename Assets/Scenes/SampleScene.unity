@@ -12994,7 +12994,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 8
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -13018,7 +13018,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.8373916, y: -1.0513043, z: 11.152344}
+  m_LocalPosition: {x: 0.85260844, y: -1.0513046, z: 21.152344}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1732191999}
@@ -20445,7 +20445,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033578283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.66, y: 6.32, z: 0}
+  m_LocalPosition: {x: 0.41, y: 9.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21944,8 +21944,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   movingRange: {x: 17.08, y: 6.8}
-  rangeOffset: {x: 0, y: 1.92}
-  hitWallRange: {x: 5.52, y: 0}
+  rangeOffset: {x: 0, y: 2.07}
+  hitWallRange: {x: 5.52, y: 2.98}
   attackRange: {x: 4.87, y: 3.29}
   attackOffset: {x: -0.39, y: 0.19}
   maxHp: 0
@@ -21984,7 +21984,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06, y: 0}
+  m_Offset: {x: -0.41, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -21995,7 +21995,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.34, y: 0.42}
+  m_Size: {x: 2.36, y: 2.45}
   m_EdgeRadius: 0
 --- !u!50 &1626159824
 Rigidbody2D:
@@ -22075,7 +22075,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626159820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.25, y: 6.63, z: 0}
+  m_LocalPosition: {x: 10.55, y: 6.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

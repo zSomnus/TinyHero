@@ -21,8 +21,7 @@ public class Death : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);           
         }
     }
 }
