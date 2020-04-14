@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8068620363347531075}
   - component: {fileID: 8227202383134897683}
   - component: {fileID: 8225262956632635422}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80214c19a3f5b80499db2c5b29980de3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemSpawn: {fileID: 0}
+  itemSpawn: {fileID: 9009278150759005734, guid: 087fc82c8ef6ece44a415c26714e8bf3,
+    type: 3}
   sprite1: {fileID: 5586943174218530051, guid: 0ed66a44c83477c428f58059cda84eed, type: 3}
   sprite2: {fileID: 1371628056344953650, guid: 0ed66a44c83477c428f58059cda84eed, type: 3}

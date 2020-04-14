@@ -270,7 +270,7 @@ public class Movement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             collider.size = new Vector2(0.82f, 1.4f);
             collider.offset = new Vector2(0.21f, 0.13f);
-            jumpParticle.Emit(100);
+            jumpParticle.Emit(30);
         }
     }
 
@@ -281,7 +281,7 @@ public class Movement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             canDoubleJump = false;
             animator.SetTrigger("DoubleJump");
-            jumpParticle.Emit(100);
+            jumpParticle.Emit(30);
         }
     }
 
