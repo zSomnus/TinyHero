@@ -71,6 +71,9 @@ public class Movement : MonoBehaviour
 
     public bool cornerClimbing;
 
+    [SerializeField] ParticleSystem jumpParticle;
+    [SerializeField] ParticleSystem onWallSlideParticle;
+
     private void Awake()
     {
         audio = Camera.main.GetComponent<AudioSource>();
@@ -199,6 +202,7 @@ public class Movement : MonoBehaviour
             animator.SetBool("Falling", true);
             collider.size = heroCollision.fallColSize;
             collider.offset = heroCollision.fallColOffset;
+            onWallSlideParticle.Stop();
         }
         else// if(collision.OnGround)
         {
@@ -266,6 +270,7 @@ public class Movement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             collider.size = new Vector2(0.82f, 1.4f);
             collider.offset = new Vector2(0.21f, 0.13f);
+            jumpParticle.Emit(100);
         }
     }
 
@@ -276,6 +281,7 @@ public class Movement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             canDoubleJump = false;
             animator.SetTrigger("DoubleJump");
+            jumpParticle.Emit(100);
         }
     }
 
@@ -314,6 +320,7 @@ public class Movement : MonoBehaviour
                 else
                 {
                     animator.SetBool("OnWall", false);
+                    onWallSlideParticle.Stop();
                 }
             }
         }
@@ -375,6 +382,7 @@ public class Movement : MonoBehaviour
 
         rb.velocity = new Vector2(rb.velocity.x, -wallSlideSpeed);
         canMove = false;
+        onWallSlideParticle.Play();
     }
 
     void Slide()
