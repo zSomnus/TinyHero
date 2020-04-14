@@ -3,25 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Death : MonoBehaviour
+public class Credits : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("LoadMainMenu", 20);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+      
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    void LoadMainMenu()
     {
-        if (col.gameObject.tag == "Player")
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);           
-        }
+        SceneManager.LoadScene("Main Menu");
     }
 }
