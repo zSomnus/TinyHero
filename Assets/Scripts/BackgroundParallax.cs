@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
-public class FollowCamera : MonoBehaviour
+public class BackgroundParallax : MonoBehaviour
 {
     [SerializeField] float offsetFactor = 1000.0f;
     Material spriteMat;
@@ -24,6 +25,8 @@ public class FollowCamera : MonoBehaviour
             Vector2 offset = transform.position;
             offset.y = 0;
             spriteMat.mainTextureOffset = offset / offsetFactor;
+
+            //tl = new Vector3(offset.x / offsetFactor, 0);
         }
         else
         {

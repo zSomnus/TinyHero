@@ -3323,7 +3323,9 @@ PolygonCollider2D:
     - - {x: -11.866005, y: 58.985203}
       - {x: -85.31806, y: 59.182785}
       - {x: -85.50316, y: -14.647825}
-      - {x: 54.28898, y: -14.024254}
+      - {x: 9.198573, y: -15.525452}
+      - {x: 52.41542, y: -14.4638815}
+      - {x: 52.526196, y: -14.202037}
       - {x: 53.170048, y: 58.5198}
 --- !u!483693784 &1302162464
 TilemapRenderer:
@@ -83108,6 +83110,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 135441646861970691, guid: a55ed9be0397f4a4f87fc18f5c79bfc2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 135441647048292848, guid: a55ed9be0397f4a4f87fc18f5c79bfc2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -83178,6 +83185,11 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1088174678}
+    - target: {fileID: 2747168791980192688, guid: a55ed9be0397f4a4f87fc18f5c79bfc2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a55ed9be0397f4a4f87fc18f5c79bfc2, type: 3}
 --- !u!1001 &1190355917996692145
@@ -83214,6 +83226,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e942a7faf03837141a829102a003cd8a, type: 3}
+--- !u!1 &2881960729728975843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2747168792222406425, guid: a55ed9be0397f4a4f87fc18f5c79bfc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 135441646281790714}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2881960729728975844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2881960729728975843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea427dff1374e304a84dc14d9e578f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetFactor: 500
+  autoMove: 0
+  autoMoveAmount: 0
 --- !u!1001 &3045118970811954903
 PrefabInstance:
   m_ObjectHideFlags: 0
