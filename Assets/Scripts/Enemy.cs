@@ -98,7 +98,7 @@ public class Enemy : MonoBehaviour
     protected virtual void ApplyDamage()
     {
         Debug.Log("T_T");
-        hero.GetComponent<Hero>().TakeDamage(damage);
+        if(hero != null) hero.GetComponent<Hero>().TakeDamage(damage);
     }
 
     protected void CatchPlayer()
