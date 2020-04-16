@@ -9,3 +9,8 @@
 |Slide     |![Slide](https://github.com/zSomnus/TinyHero/blob/master/Assets/Animation/Adventurer-1.5/Individual%20Sprites/adventurer-slide-00.png)|RT                  |k               |x               |
 |Wall Slide|![WallSlide](https://github.com/zSomnus/TinyHero/blob/master/Assets/Animation/Adventurer-1.5/Individual%20Sprites/adventurer-wall-slide-00.png)|On wall + Left stick|On wall + A or D|On wall + ← or →|
 |Double Jump|![Double Jump](https://github.com/zSomnus/TinyHero/blob/master/Assets/Animation/Adventurer-1.5/Individual%20Sprites/adventurer-smrslt-00.png)|In air + A|In air + Space bar|In air + c|
+
+## Videos
+
+### Game Demo : https://www.youtube.com/watch?v=L-WsZeFNGIE
+### Jump and Climb challenge : https://www.youtube.com/watch?v=PYLfcx06-rI
