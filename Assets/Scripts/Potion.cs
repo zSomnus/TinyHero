@@ -6,11 +6,13 @@ public class Potion : MonoBehaviour
 {
     public int healAmount;
     protected GameObject hero;
-
+    private AudioSource audioSource;
+    [SerializeField] AudioClip healingSFX;
 
     void Start()
     {
         hero = GameObject.Find("Hero");
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -22,8 +24,14 @@ public class Potion : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
+            HealingSFX();
             hero.GetComponent<Hero>().Healing(healAmount);
             Destroy(gameObject);
         }
+    }
+
+    private void HealingSFX()
+    {
+        audioSource.PlayOneShot(healingSFX);
     }
 }
